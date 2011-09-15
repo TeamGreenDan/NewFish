@@ -8,6 +8,8 @@
 
 #import "PreventerSection.h"
 #import "PreventerLining.h"
+#import <stdlib.h>
+#import <UIKit/UIKit.h>
 
 
 @implementation PreventerSection
@@ -37,8 +39,10 @@ int healthOfSection = 4;
 		
 		CGPoint pPoint = CGPointMake(xPos, yPos);
 		[tempLining setCenter:(pPoint)];
-		[sections addObject:tempLining];
 		[tempLining setXAndYPoints];
+		[sections addObject:tempLining];
+		
+		//[self.view addSubview:tempLining];
 		
 		if(isOnLeftSide == true){
 			xPos = xPos + xIncrease;}
@@ -56,7 +60,9 @@ int healthOfSection = 4;
 		
 		if(CGRectIntersectsRect(tempLining.frame, mite.frame) && tempLining.hidden == false){
 
-			[tempLining hit];
+			if(tempLining.isLock){
+				[tempLining hit];}
+			
 			[mite rebound];
 		}
 	}
@@ -73,7 +79,7 @@ int healthOfSection = 4;
 		
 		tempLining = [sections objectAtIndex:index];
 		
-		if(tempLining.hidden == true || tempLining.Health == 2){
+		if(tempLining.hidden == false || tempLining.Health == 2){
 			index ++;
 		}
 		else{

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320CEB11421A0FD003ECC9F /* PreventerSection.m */; };
 		1D3623260D0F684500981E51 /* FishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FishAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -91,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0320CEB01421A0FD003ECC9F /* PreventerSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerSection.h; sourceTree = "<group>"; };
+		0320CEB11421A0FD003ECC9F /* PreventerSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerSection.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* FishAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* FishAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishAppDelegate.m; sourceTree = "<group>"; };
@@ -207,7 +210,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2E052C1141595BB00EABDA0 /* Preventer Lining */,
 				B20718D7140DD1F400A9574C /* Objects */,
 				B29BC1BB14022A6500A136FA /* Views */,
 				B29BC1BA14022A5300A136FA /* Characters */,
@@ -387,6 +389,7 @@
 				B257452D1418ACBF009C006B /* SpitProjectile.m */,
 				B264C37D1419B44A0060A85A /* Pollen.h */,
 				B264C37E1419B44A0060A85A /* Pollen.m */,
+				B2E052C1141595BB00EABDA0 /* Preventer Lining */,
 			);
 			name = Characters;
 			sourceTree = "<group>";
@@ -415,6 +418,8 @@
 			children = (
 				B2E053D214159CE200EABDA0 /* PreventerArray.h */,
 				B2E053D314159CE200EABDA0 /* PreventerArray.m */,
+				0320CEB01421A0FD003ECC9F /* PreventerSection.h */,
+				0320CEB11421A0FD003ECC9F /* PreventerSection.m */,
 				B2E053D414159CE200EABDA0 /* PreventerLining.h */,
 				B2E053D514159CE200EABDA0 /* PreventerLining.m */,
 			);
@@ -579,6 +584,7 @@
 				861A49A01418618A004C86D1 /* Sprite.m in Sources */,
 				B257452E1418ACBF009C006B /* SpitProjectile.m in Sources */,
 				B264C37F1419B44A0060A85A /* Pollen.m in Sources */,
+				0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
