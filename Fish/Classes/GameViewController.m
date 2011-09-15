@@ -155,7 +155,7 @@ int score = 0;
 		[theLining createArray:25 :75];
 		
 		
-		for(PreventerLining *pLining in [theLining getArray]){
+		for(PreventerLining *pLining in [theLining getRow]){
 		    [self.view addSubview:pLining];		
 		}
 		
@@ -218,7 +218,7 @@ int score = 0;
 		[theLining checkCollisionWithTrigger: mite];
 	}
 	
-	[theLining checkHealthOfLinings];
+	//[theLining checkHealthOfLinings];
 	
 }
 

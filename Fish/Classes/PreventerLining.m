@@ -37,12 +37,14 @@ float lining_radius = 25;
 	[self setFrame:CGRectMake(0, 0, lining_radius*2, lining_radius*2)];
 	
 	self.Health = 2;
+	self.hidden = false;
+	self.isLock = true;
 	}
 	
     return self;
 }
 
--(void)setXAndYPos{
+-(void)setXAndYPoints{
 	XPos = self.center.x;
 	YPos = self.center.y;
 }
@@ -53,11 +55,14 @@ float lining_radius = 25;
 
 -(void)isDestroy{
 	self.hidden = true;
+	self.isLock = true;
 	
 }
 
 -(void)isRepair{
+	self.Health = Health;
 	self.hidden = false;
+	self.isLock = false;
 }
 
 

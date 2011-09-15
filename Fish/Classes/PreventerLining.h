@@ -22,7 +22,12 @@
 @property int Health;
 @property bool isLock;
 
+-(id)init;
 -(void)hit;
+-(void)setXAndYPoints;
 -(void)isDamage;
+-(void)isDestroy;
+-(void)isRepair;
+
 
 @end

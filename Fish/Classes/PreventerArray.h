@@ -12,13 +12,13 @@
 
 
 @interface PreventerArray : NSObject {
-	NSMutableArray *arrayLining;
+	NSMutableArray *rows;
 }
 
 -(void)createArray:(float)xStart :(float)yStart;
 -(void)checkCollisionWithTrigger: (DustMite *) mite;
--(void)checkHealthOfLinings;
--(void) createArrayLoop: (int) loop: (int) xIncrease: (int) yIncrease: (bool) xIsPos: (bool) yIsPos;
--(NSMutableArray *)getArray;
+//-(void)checkHealthOfLinings;
+-(void) createArrayLoop: (float)xPoint: (float)yPoint: (bool)isOnLeftSide;
+-(NSMutableArray *)getRow;
 
 @end
