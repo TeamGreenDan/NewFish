@@ -21,7 +21,7 @@ float friction = .6;
 @synthesize timer;
 
 - (id)init {
-    self = [super initWithImage:[UIImage imageNamed:@"fish.png"]];
+    self = [super initWithImage:[UIImage imageNamed:@"sailor_Base.png"]];
     if (self) {
         if(!acc)
         {
@@ -29,7 +29,7 @@ float friction = .6;
         }
 		XPos = width/2;
 		YPos = height/2;
-        [self setFrame:CGRectMake(0, 0, ball_radius*2, ball_radius*2)];
+        [self setFrame:CGRectMake(0, 0, 103, 87)];
         
         [self toggleTimer];
     }

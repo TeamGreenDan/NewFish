@@ -15,12 +15,12 @@ float sprite_radius = 25;
 
 
 - (id)init :(int)randomX : (int)randomY {
-    self = [super initWithImage:[UIImage imageNamed:@"dustMite.png"]];
+    self = [super initWithImage:[UIImage imageNamed:@"dustMite_base.png"]];
     if(self){
 		
 		XPos = randomX;
 		YPos = randomY;
-        [self setFrame:CGRectMake(XPos, YPos, sprite_radius*3, sprite_radius*2)];
+        [self setFrame:CGRectMake(XPos, YPos, 72, 42)];
 		
 
 		self.chooseTarget;

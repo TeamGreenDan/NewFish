@@ -18,12 +18,12 @@ float animalFur_radius = 30;
 
 
 - (id)init :(int)randomX : (int)randomY {
-    self = [super initWithImage:[UIImage imageNamed:@"animalFur.png"]];
+    self = [super initWithImage:[UIImage imageNamed:@"animalFur_base.png"]];
     if(self){
 		
 		XPos = randomX;
 		YPos = randomY;
-        [self setFrame:CGRectMake(XPos, YPos, animalFur_radius*2.2, animalFur_radius*2)];
+        [self setFrame:CGRectMake(XPos, YPos, 52, 63)];
 		
 		
 		self.chooseTarget;

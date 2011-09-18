@@ -105,7 +105,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">fish.png</string>
+							<string key="NSResourceName">sailor_base.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="848529542">
@@ -398,7 +398,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABDLQAAxFLAAA</bytes>
 					</object>
-					<string>{{373, 88}, {783, 918}}</string>
+					<string>{{373, 91}, {783, 915}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<reference ref="0"/>
 					<boolean value="YES"/>
@@ -760,18 +760,18 @@
 				<string>arrowGraphic.png</string>
 				<string>asthmaWaikatoButton.png</string>
 				<string>asthmaWaikatoButtonPress.png</string>
-				<string>fish.png</string>
 				<string>menuButton.png</string>
 				<string>menuButtonPress.png</string>
+				<string>sailor_base.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{51, 24}</string>
 				<string>{83, 82}</string>
 				<string>{83, 82}</string>
-				<string>{634, 536}</string>
 				<string>{441, 80}</string>
 				<string>{441, 80}</string>
+				<string>{103, 87}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">141</string>
