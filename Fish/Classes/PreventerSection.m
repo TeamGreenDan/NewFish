@@ -88,8 +88,8 @@ int healthOfSection = 4;
 		}
 	}
 }
-
--(void)createMucus(UIViewController){
+/*
+-(void)createMucus: (UIViewController*) viewController{
 	PreventerLining *tempLining = [sections objectAtIndex:0];
 	float tempX = tempLining.XPos;
 	float tempY = tempLining.YPos;
@@ -103,8 +103,7 @@ int healthOfSection = 4;
 	CGPoint mucusPoints = CGPointMake(tempX, tempY);
 	[mucusView setCenter:(mucusPoints)];
 	
-	
-}
+}*/
 
 
 //-(PreventerLining *)getLastPoints{
