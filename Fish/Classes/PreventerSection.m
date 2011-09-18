@@ -88,34 +88,45 @@ int healthOfSection = 4;
 		}
 	}
 }
-
--(PreventerLining *)getLastPoints{
-	int index = maxNumberOfLining - 1;
-	PreventerLining *tempLining;
+/*
+-(void)createMucus: (UIViewController*) viewController{
+	PreventerLining *tempLining = [sections objectAtIndex:0];
+	float tempX = tempLining.XPos;
+	float tempY = tempLining.YPos;
 	
-	while (true) {
-		tempLining = [sections objectAtIndex:index];
+	tempX = tempX - 25;
+	tempY = tempY - 25;
+	
+	CGRect frame = CGRectMake(0, 0, 150, 50);
+	UIView *mucusView = [[UIView alloc] initWithFrame: frame];
+	[mucusView setBackgroundColor:(255)];
+	CGPoint mucusPoints = CGPointMake(tempX, tempY);
+	[mucusView setCenter:(mucusPoints)];
+	
+}*/
+
+
+//-(PreventerLining *)getLastPoints{
+	//int index = maxNumberOfLining - 1;
+	//PreventerLining *tempLining;
+	
+	//while (true) {
+		//tempLining = [sections objectAtIndex:index];
 		
-		if(tempLining.hidden == false){
-			return tempLining;
-		}
-		else{
-			if(index = 0){
-				return tempLining;}
-			else{
-				index = index - 1;}
-		}
-	}
-}
+		//if(tempLining.hidden == false){
+			//return tempLining;
+		//}
+		//else{
+			//if(index = 0){
+				//return tempLining;}
+			//else{
+				//index = index - 1;}
+		//}
+	//}
+//}
 
 -(NSMutableArray *)getSection{
 	return sections;
 }
-
-//-(void)createMucus{
-	
-	//float tempX = 0;
-	//float tempY = [sections objectAtIndex:0].XPos;
-//}
 
 @end

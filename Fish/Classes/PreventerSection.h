@@ -15,7 +15,7 @@
 
 -(void)createSection:(float)xStart :(float)yStart :(bool)isOnLeftSide;
 -(void)checkCollisionWithTrigger: (DustMite *) mite;
-//-(void)checkHealthOfSection;
+-(void)createMucus:(UIViewController*)viewController;
 -(void)repairSection;
 -(NSMutableArray *)getSection;
 
