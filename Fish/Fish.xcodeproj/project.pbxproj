@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320CEB11421A0FD003ECC9F /* PreventerSection.m */; };
+		033975671426C50B00731731 /* Mucus.m in Sources */ = {isa = PBXBuildFile; fileRef = 033975661426C50B00731731 /* Mucus.m */; };
 		1D3623260D0F684500981E51 /* FishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FishAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -94,6 +95,8 @@
 /* Begin PBXFileReference section */
 		0320CEB01421A0FD003ECC9F /* PreventerSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerSection.h; sourceTree = "<group>"; };
 		0320CEB11421A0FD003ECC9F /* PreventerSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerSection.m; sourceTree = "<group>"; };
+		033975651426C50B00731731 /* Mucus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mucus.h; sourceTree = "<group>"; };
+		033975661426C50B00731731 /* Mucus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mucus.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* FishAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* FishAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishAppDelegate.m; sourceTree = "<group>"; };
@@ -422,6 +425,8 @@
 				0320CEB11421A0FD003ECC9F /* PreventerSection.m */,
 				B2E053D414159CE200EABDA0 /* PreventerLining.h */,
 				B2E053D514159CE200EABDA0 /* PreventerLining.m */,
+				033975651426C50B00731731 /* Mucus.h */,
+				033975661426C50B00731731 /* Mucus.m */,
 			);
 			name = "Preventer Lining";
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 				B257452E1418ACBF009C006B /* SpitProjectile.m in Sources */,
 				B264C37F1419B44A0060A85A /* Pollen.m in Sources */,
 				0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */,
+				033975671426C50B00731731 /* Mucus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

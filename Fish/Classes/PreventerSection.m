@@ -18,7 +18,16 @@ float xPos;
 float yPos;
 
 int maxNumberOfLining = 3;
-int healthOfSection = 4;
+int healthOfSection = 3;
+
+UIViewController *SectionView;
+
+
+-(id)initWithViewController:(UIViewController *) ViewUI{
+	if(self){
+		SectionView = ViewUI;}
+	return self;
+}
 
 -(void)createSection:(float)xStart :(float)yStart: (bool)isOnLeftSide{
 	
@@ -42,7 +51,7 @@ int healthOfSection = 4;
 		[tempLining setXAndYPoints];
 		[sections addObject:tempLining];
 		
-		//[self.view addSubview:tempLining];
+		[SectionView.view addSubview:tempLining];
 		
 		if(isOnLeftSide == true){
 			xPos = xPos + xIncrease;}
@@ -60,8 +69,14 @@ int healthOfSection = 4;
 		
 		if(CGRectIntersectsRect(tempLining.frame, mite.frame) && tempLining.hidden == false){
 
-			if(tempLining.isLock){
-				[tempLining hit];}
+			if(tempLining.isLock == false){
+				[tempLining hit];
+				healthOfSection = healthOfSection - 1;
+				
+				if(healthOfSection == 0){
+					[self createMucus];
+				}
+			}
 			
 			[mite rebound];
 		}
@@ -88,8 +103,8 @@ int healthOfSection = 4;
 		}
 	}
 }
-/*
--(void)createMucus: (UIViewController*) viewController{
+
+-(void)createMucus{
 	PreventerLining *tempLining = [sections objectAtIndex:0];
 	float tempX = tempLining.XPos;
 	float tempY = tempLining.YPos;
@@ -102,8 +117,9 @@ int healthOfSection = 4;
 	[mucusView setBackgroundColor:(255)];
 	CGPoint mucusPoints = CGPointMake(tempX, tempY);
 	[mucusView setCenter:(mucusPoints)];
+	[SectionView.view addSubview:mucusView];
 	
-}*/
+}
 
 
 //-(PreventerLining *)getLastPoints{
