@@ -87,7 +87,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">Visit Asthma Waikato </string>
+						<string key="IBUIText">Visit Sailor's Website </string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -99,13 +99,13 @@
 					<object class="IBUIImageView" id="498266079">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{138, 44}, {511, 421}}</string>
+						<string key="NSFrame">{{40, 44}, {694, 421}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">sailor_base.png</string>
+							<string key="NSResourceName">TitleImagePholder_NotTransparent.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="848529542">
@@ -757,21 +757,21 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>TitleImagePholder_NotTransparent.png</string>
 				<string>arrowGraphic.png</string>
 				<string>asthmaWaikatoButton.png</string>
 				<string>asthmaWaikatoButtonPress.png</string>
 				<string>menuButton.png</string>
 				<string>menuButtonPress.png</string>
-				<string>sailor_base.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{688, 393}</string>
 				<string>{51, 24}</string>
 				<string>{83, 82}</string>
 				<string>{83, 82}</string>
 				<string>{441, 80}</string>
 				<string>{441, 80}</string>
-				<string>{103, 87}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">141</string>

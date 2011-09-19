@@ -38,7 +38,7 @@
 
 -(IBAction)menuItemVisitAsthmaWaikato
 {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://waikatoasthma.co"]];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.sailorthepufferfish.co.nz"]];
 }
 
 

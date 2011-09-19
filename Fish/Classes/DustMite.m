@@ -17,7 +17,7 @@ float sprite_radius = 25;
 - (id)init :(int)randomX : (int)randomY {
     self = [super initWithImage:[UIImage imageNamed:@"dustMite_base.png"]];
     if(self){
-		
+		health = 2;
 		XPos = randomX;
 		YPos = randomY;
         [self setFrame:CGRectMake(XPos, YPos, 72, 42)];

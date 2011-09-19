@@ -20,13 +20,14 @@ float animalFur_radius = 30;
 - (id)init :(int)randomX : (int)randomY {
     self = [super initWithImage:[UIImage imageNamed:@"animalFur_base.png"]];
     if(self){
-		
+		self.chooseTarget;
+		health = 3;
 		XPos = randomX;
 		YPos = randomY;
-        [self setFrame:CGRectMake(XPos, YPos, 52, 63)];
-		
-		
-		self.chooseTarget;
+        [self setFrame:CGRectMake(XPos, YPos, 52, 63)];		
+		boundsBottom = 854;
+		boundsTopAndLeft = 150;
+		boundsRight = 618;
 		
 		
     }

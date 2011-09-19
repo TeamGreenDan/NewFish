@@ -14,16 +14,19 @@
 @synthesize YPos;
 @synthesize XPos;
 @synthesize Health;
-@synthesize HasBeenHit;
+@synthesize isLock;
 
 int timer;
 float lining_radius = 25;
 
 -(void)hit{
-	
 	Health = Health - 1;
-	HasBeenHit = true;
-	//timer = 30;
+	
+	if(Health == 1)
+		[self isDamage];
+	
+	if(Health == 0)
+		[self isDestroy];
 }
 
 - (id)init {
@@ -34,27 +37,34 @@ float lining_radius = 25;
 	[self setFrame:CGRectMake(0, 0, lining_radius*2, lining_radius*2)];
 	
 	self.Health = 2;
-	//timer = 0;
-	self.HasBeenHit = false;
+	self.hidden = false;
+	self.isLock = true;
+	XPos = self.center.x;
+	YPos = self.center.y;
 	}
 	
     return self;
 }
-
--(void)updateLining{
+/*
+-(void)setXAndYPoints{
 	XPos = self.center.x;
 	YPos = self.center.y;
-	
-	//if(timer != 0){
-		//timer = timer - 1;
-	//}
-	//else{
-		//HasBeenHit = false;
-	//}
-}
+}*/
 
 -(void)isDamage{
 	[self setImage:[UIImage imageNamed:@"preventerBubbleRed.png"]];
+}
+
+-(void)isDestroy{
+	self.hidden = true;
+	self.isLock = true;
+	
+}
+
+-(void)isRepair{
+	self.Health = Health;
+	self.hidden = false;
+	self.isLock = false;
 }
 
 

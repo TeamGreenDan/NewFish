@@ -13,6 +13,7 @@
 #import "DustMite.h"
 #import "AnimalFur.h"
 #import "Pollen.h"
+#import "DeathSplat.h"
 #import "PreventerLining.h"
 #import "PreventerArray.h"
 #import <stdlib.h>
@@ -110,8 +111,8 @@ int score = 0;
     if (self) {
 		
 		//Prevents Screen Locking
-		[UIApplication sharedApplication].idleTimerDisabled = YES;	
-		//instatiate timer
+		[UIApplication sharedApplication].idleTimerDisabled = YES;
+				//instatiate timer
 		gameTimer = [NSTimer scheduledTimerWithTimeInterval:1/30.0 target:self selector:@selector(updateGame) userInfo:nil repeats:true];
 		
 		//instantiate the fish
@@ -125,14 +126,14 @@ int score = 0;
 		for (int i = 0; i < 20; i++) {
 			if (spawnSwitch1 == FALSE ) {
 				if (spawnSwitch2 == FALSE) {
-					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):50];
+					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):200];
 					[self.view addSubview:theFur];
 					[triggersArray insertObject:theFur atIndex:i];
 					
 					spawnSwitch2 = TRUE;
 				}
 				else {
-					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):50];
+					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):200];
 					[self.view addSubview:aPollen];
 					[triggersArray insertObject:aPollen atIndex:i];
 					spawnSwitch2 = FALSE;
@@ -140,7 +141,7 @@ int score = 0;
 				spawnSwitch1 = TRUE;
 			}
 			else {
-				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):50];			
+				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):200];			
 				[self.view addSubview:theMite];
 				[triggersArray insertObject:theMite atIndex:i];
 				spawnSwitch1 = FALSE;
@@ -155,7 +156,7 @@ int score = 0;
 		[theLining createArray:25 :75];
 		
 		
-		for(PreventerLining *pLining in [theLining getArray]){
+		for(PreventerLining *pLining in [theLining getRow]){
 		    [self.view addSubview:pLining];		
 		}
 		
@@ -182,25 +183,33 @@ int score = 0;
 	int i = ([triggersArray count]-1);
 	for (i; i >= 0; i--) {
 		
-		DustMite *collisionMite;
-		collisionMite = [triggersArray objectAtIndex:i];
+		DustMite *collisionTrigger;
+		collisionTrigger = [triggersArray objectAtIndex:i];
 		
-		if(theFish.YPos > (collisionMite.YPos-40) && theFish.YPos < (collisionMite.YPos +40)){
-			if(theFish.XPos > (collisionMite.XPos-40) && theFish.XPos < (collisionMite.XPos +40))
+		if(theFish.YPos > (collisionTrigger.YPos-40) && theFish.YPos < (collisionTrigger.YPos +40)){
+			if(theFish.XPos > (collisionTrigger.XPos-40) && theFish.XPos < (collisionTrigger.XPos +40))
 			{
 				printf("HIT! numMites = %d\n", [triggersArray count]);
 				
 				
 				[theFish hit];
-				[collisionMite removeFromSuperview];
-				[triggersArray removeObjectAtIndex:i];
-				[collisionMite release];
+				[collisionTrigger takeDamage];
+				if (collisionTrigger.health == 0) {
+					
+					[collisionTrigger removeFromSuperview];
+					DeathSplat *aSplat = [[DeathSplat alloc] init: collisionTrigger.XPos : collisionTrigger.YPos];
+					[self.view addSubview:aSplat];
+					[triggersArray removeObjectAtIndex:i];
+					[collisionTrigger release];
+					
+					//calculate the score and update the score label	
+					score = score + 10;		
+					NSString *theScore = [NSString stringWithFormat:@"Score: %i",score];			  
+					[scoreLabel setText:theScore];
+					[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+				}
 				
-				//calculate the score and update the score label	
-				score = score + 10;		
-				NSString *theScore = [NSString stringWithFormat:@"Score: %i",score];			  
-				[scoreLabel setText:theScore];
-				[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+				//Temp Win Condition
 				printf("HIT! numMites = %d\n", [triggersArray count]);
 				if ([triggersArray count]  < 1) {
 					printf("happend/n");
@@ -218,7 +227,7 @@ int score = 0;
 		[theLining checkCollisionWithTrigger: mite];
 	}
 	
-	[theLining checkHealthOfLinings];
+	//[theLining checkHealthOfLinings];
 	
 }
 
@@ -234,12 +243,12 @@ int score = 0;
 	[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
 	/*
 	 ............  ...................   . .     . ............................................  . ...... $M. . .................................
-	 .   .  ..  ................... 7MMM~.:MMMMMMI..,,,,,, .... .   .... .....  ..........  .?NMMMMMM+M~..=M. 8MMMMMMMMO ........................
-	 ...........................DMM .. M.MM     . O88MO88 .... MMZ...,M~.....=M. .........MM.  M.....M~  =M. ,M.................................
-	 .  ........................MM+.. .D.MM..........M ........M MM...M~.....=M. ..............M.....MM887M.  MMM ..............................
-	 ............   .  .   .  .....OMMMMM.MMOOOO=.....M .......=MMMMMD.M~.....=M. ..............M.....M~..=M. .M.................................
-	 ..............  .. ..  .. ..MM~  ,$M.OM~.  .  ...M ...... OM ..M..M:   ..=M.... ...........M ....M~.  O.. M.................................
-	 .  ... .  .    .. ..  .. ....7II= . ,I+7$7I ....: ...... ,~ ..M..MMMMMM  MMMMMMN .........M.... ~....... MMMMM.............................
+	 .   .  ..  ................... 7MMM~ .:MMMMMMI..,,,,,, .... .   .... .....  ..........  .?NMMMMMM+M~..=M. 8MMMMMMMMO ........................
+	 ...........................DMM .. ..  MM     . O88MO88 .... MMZ...,M~.....=M. .........MM.  M.....M~  =M. ,M.................................
+	 .  ........................MM+.. ...  MM..........M ........M MM...M~.....=M. ..............M.....MM887M.  MMM ..............................
+	 ............   .  .   .  .....OMMMMM. MMOOOO=.....M .......=MMMMMD.M~.....=M. ..............M.....M~..=M. .M.................................
+	 ..............  .. ..  .. .....  ,$M. OM~.  .  ...M ...... OM ..M..M:   ..=M.... ...........M ....M~.  O.. M.................................
+	 .  ... .  .    .. ..  .. ....7IIII. , I+7$7I ....: ...... ,~ ..M..MMMMMM  MMMMMMN .........M.... ~....... MMMMM.............................
 	 ........ .. .. ...... ... ..............................~~~~ZOO8MMMMMMMMMMMMMMMMMZ: .......O..............     .............................
 	 ....... ....... ...... ...... ...... ...... ...... ...  ............   .  .   ....M ..  .   .  .   .  .                                     
 	 .......     ..  .. ..  .. ... .. ... .. ... ...... .......................................................... ...... ...... ...... ...... ..

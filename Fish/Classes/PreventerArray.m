@@ -7,112 +7,96 @@
 //
 
 #import "PreventerArray.h"
+#import "PreventerSection.h"
 #import "PreventerLining.h"
-#import "DustMite.h"
+#import "Sprite.h"
 
 
 @implementation PreventerArray
+//PreventerSection tempSection;
 
 
-//PerventerLining *currentLining;
-float currentX;
-float currentY;
-
--(void)createArray: (float) xStart: (float) yStart
-{		
-	arrayLining = [[NSMutableArray alloc] init];
+-(void)createArray: (float) xStart: (float) yStart{		
+	rows = [[NSMutableArray alloc] init];
+	PreventerSection *tempSection;
 	
-	currentX = xStart;
-	currentY = yStart;
+	float currentX = xStart;
+	float currentY = yStart;
 	
-	[self createArrayLoop:20 :0 :50 :true :true];
+	//[self createArrayLoop: currentX: currentY: true];
+	
+	for(int index = 0; index < 24; index++){
+		tempSection = [[PreventerSection alloc] init];
+		[tempSection createSection: currentX: currentY: true];
+		[rows addObject: tempSection];
+		
+		currentY = currentY + 40;
+		
+		[tempSection release];
+		
+	}
 	
 	currentX = 743;
 	currentY = yStart;
 	
-	[self createArrayLoop:20 :0 :50 :true :true];
+	//[self createArrayLoop: currentX: currentY: false];
 	
-	
+	for(int index = 0; index < 24; index++){
+		tempSection = [[PreventerSection alloc] init];
+		[tempSection createSection: currentX: currentY: false];
+		[rows addObject: tempSection];
+		
+		currentY = currentY + 40;
+		
+		[tempSection release];
+		
+	}
 }
 
--(NSMutableArray *)getArray{
+-(NSMutableArray *)getRow{
+	NSMutableArray *arrayLining;
+	arrayLining = [[NSMutableArray alloc] init];
+	
+	for(PreventerSection *tempSection in rows) {
+		
+		for(PreventerLining *tempLining in [tempSection getSection]){
+			[arrayLining addObject: tempLining];
+		}
+	}
+	
 	return arrayLining;
+	[arrayLining release];
 }
 
 
--(void)checkCollisionWithTrigger: (DustMite *) mite{
+-(void)checkCollisionWithTrigger: (Sprite *) aSprite{
 	
-	for(PreventerLining *pLining in arrayLining) {
-		
-		if(CGRectIntersectsRect(pLining.frame, mite.frame)){
-			
-			//bool otherBeenHit = false;
-			
-			//for(PreventerLining *otherLining in arrayLining){
-				
-				//if(otherLining.HasBeenHit == true){
-					//otherBeenHit = true;
-					//break;
-				//}
-			//}
-			
-			//if(otherBeenHit == false){
-				[pLining hit];
-				[mite rebound];
-			//}
-			
-		}
+	for(PreventerSection *currentSection in rows) {
+		[currentSection checkCollisionWithTrigger:aSprite];
 	}
 }
 
--(void)checkHealthOfLinings{
+-(void)repairRow{
 	
-	int count = [arrayLining count];
-	int index = count - 1;
-	PreventerLining *currentLining;
-	
-	for(int i = count; i > 0; i--) {
-		
-		currentLining = [arrayLining objectAtIndex: index];
-		
-		if(currentLining.Health == 0){
-			
-			printf("Lining is Destory\n");
-			[currentLining removeFromSuperview];
-			[arrayLining removeObjectAtIndex: index];
-		}
-		else if(currentLining.Health == 1){
-			
-			[currentLining isDamage];
-		}
-		
-		index = index - 1;
+	for(PreventerSection *currentSection in rows) {
+		[currentSection repairSection];
 	}
 	
 }
 
--(void) createArrayLoop: (int) loop: (int) xIncrease: (int) yIncrease: (bool) xIsPos: (bool) yIsPos{
+-(void) createArrayLoop: (float)xPoint: (float)yPoint: (BOOL)isOnLeftSide{
 	
-	PreventerLining *currentLining;
+	PreventerSection *tempSection;
+	float tempX = xPoint;
+	float tempY = yPoint;
 	
-	for(int i=0;i<loop;i++){
-		currentLining = [[PreventerLining alloc] init];
+	for(int i = 0; i < 10; i++){
+		tempSection = [[PreventerSection alloc] init];
+		[tempSection createSection: tempX: tempY: isOnLeftSide];
+		[rows addObject: tempSection];
+		[tempSection release];
 		
-		CGPoint pPoint = CGPointMake(currentX, currentY);
-		[currentLining setCenter:(pPoint)];
-		[arrayLining addObject:currentLining];
-		
-		if(xIsPos == true){
-			currentX = currentX + xIncrease;}
-		else{
-			currentX = currentX - xIncrease;}
-		
-		if(yIsPos == true){
-			currentY = currentY + yIncrease;}
-		else{
-			currentY = currentY - yIncrease;}	
-		
-		[currentLining release];
+		tempY = tempY + 40;
 	}
 }
 

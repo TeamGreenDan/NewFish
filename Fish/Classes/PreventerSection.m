@@ -8,6 +8,8 @@
 
 #import "PreventerSection.h"
 #import "PreventerLining.h"
+#import <stdlib.h>
+#import <UIKit/UIKit.h>
 
 
 @implementation PreventerSection
@@ -37,8 +39,10 @@ int healthOfSection = 4;
 		
 		CGPoint pPoint = CGPointMake(xPos, yPos);
 		[tempLining setCenter:(pPoint)];
+		//[tempLining setXAndYPoints];
 		[sections addObject:tempLining];
-		[tempLining setXAndYPoints];
+		
+		//[self.view addSubview:tempLining];
 		
 		if(isOnLeftSide == true){
 			xPos = xPos + xIncrease;}
@@ -47,17 +51,19 @@ int healthOfSection = 4;
 		
 		[tempLining release];
 	}
-	printf("Section is created/n");
+	printf("Section is created\n");
 }
 
--(void)checkCollisionWithTrigger: (DustMite *) mite{
+-(void)checkCollisionWithTrigger: (Sprite *) aSprite{
 	
 	for(PreventerLining *tempLining in sections) {
 		
-		if(CGRectIntersectsRect(tempLining.frame, mite.frame) && tempLining.hidden == false){
+		if(CGRectIntersectsRect(tempLining.frame, aSprite.frame) && tempLining.hidden == false){
 
-			[tempLining hit];
-			[mite rebound];
+			if(tempLining.isLock){
+				[tempLining hit];}
+			
+			//[aSprite rebound];
 		}
 	}
 }
@@ -73,7 +79,7 @@ int healthOfSection = 4;
 		
 		tempLining = [sections objectAtIndex:index];
 		
-		if(tempLining.hidden == true || tempLining.Health == 2){
+		if(tempLining.hidden == false || tempLining.Health == 2){
 			index ++;
 		}
 		else{
@@ -82,34 +88,45 @@ int healthOfSection = 4;
 		}
 	}
 }
-
--(PreventerLining *)getLastPoints{
-	int index = maxNumberOfLining - 1;
-	PreventerLining *tempLining;
+/*
+-(void)createMucus: (UIViewController*) viewController{
+	PreventerLining *tempLining = [sections objectAtIndex:0];
+	float tempX = tempLining.XPos;
+	float tempY = tempLining.YPos;
 	
-	while (true) {
-		tempLining = [sections objectAtIndex:index];
+	tempX = tempX - 25;
+	tempY = tempY - 25;
+	
+	CGRect frame = CGRectMake(0, 0, 150, 50);
+	UIView *mucusView = [[UIView alloc] initWithFrame: frame];
+	[mucusView setBackgroundColor:(255)];
+	CGPoint mucusPoints = CGPointMake(tempX, tempY);
+	[mucusView setCenter:(mucusPoints)];
+	
+}*/
+
+
+//-(PreventerLining *)getLastPoints{
+	//int index = maxNumberOfLining - 1;
+	//PreventerLining *tempLining;
+	
+	//while (true) {
+		//tempLining = [sections objectAtIndex:index];
 		
-		if(tempLining.hidden == false){
-			return tempLining;
-		}
-		else{
-			if(index = 0){
-				return tempLining;}
-			else{
-				index = index - 1;}
-		}
-	}
-}
+		//if(tempLining.hidden == false){
+			//return tempLining;
+		//}
+		//else{
+			//if(index = 0){
+				//return tempLining;}
+			//else{
+				//index = index - 1;}
+		//}
+	//}
+//}
 
 -(NSMutableArray *)getSection{
 	return sections;
 }
-
-//-(void)createMucus{
-	
-	//float tempX = 0;
-	//float tempY = [sections objectAtIndex:0].XPos;
-//}
 
 @end

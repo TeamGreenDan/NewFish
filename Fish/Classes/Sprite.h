@@ -18,6 +18,10 @@
 	int targetX;
 	int targetY;
 	float direction;
+	float boundsTopAndLeft;
+	float boundsRight;
+	float boundsBottom;
+	int health;
 }
 
 @property float XSpeed;
@@ -25,8 +29,12 @@
 
 @property float XPos;
 @property float YPos;
+@property float boundsTopAndLeft;
+@property float boundsRight;
+@property float boundsBottom;
 @property int randomNum;
 @property float direction;
+@property int health;
 
 
 
@@ -35,5 +43,7 @@
 -(void)	rebound;
 -(void)	move: (Fish *)aFish;
 -(void) chooseTarget;
+-(void) chooseLining;
+-(void) takeDamage;
 
 @end

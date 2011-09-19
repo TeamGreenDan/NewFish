@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DustMite.h"
+#import "Sprite.h"
 
 @interface PreventerSection : NSObject {
 	 NSMutableArray *sections;
 }
 
 -(void)createSection:(float)xStart :(float)yStart :(bool)isOnLeftSide;
--(void)checkCollisionWithTrigger: (DustMite *) mite;
-//-(void)checkHealthOfSection;
+-(void)checkCollisionWithTrigger: (Sprite *) aSprite;
+//-(void)createMucus:(UIViewController*)viewController;
 -(void)repairSection;
 -(NSMutableArray *)getSection;
 

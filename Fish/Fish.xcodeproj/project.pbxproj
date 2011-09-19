@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320CEB11421A0FD003ECC9F /* PreventerSection.m */; };
 		1D3623260D0F684500981E51 /* FishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FishAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -57,6 +58,10 @@
 		B29BC13B140224F300A136FA /* AsthmapediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29BC139140224F300A136FA /* AsthmapediaViewController.xib */; };
 		B29BC192140228D900A136FA /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC191140228D900A136FA /* Fish.m */; };
 		B2B2DBA91418694A00D40994 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A499F1418618A004C86D1 /* Sprite.m */; };
+		B2B4360D1426D423001BF157 /* deathSplat_base.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B4360C1426D423001BF157 /* deathSplat_base.png */; };
+		B2B4362D1426D592001BF157 /* TitleImagePholder_NotTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B4362C1426D592001BF157 /* TitleImagePholder_NotTransparent.png */; };
+		B2B4367F1426D91D001BF157 /* DeathSplat.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4367E1426D91D001BF157 /* DeathSplat.m */; };
+		B2B437621426DAD6001BF157 /* DeathSplat.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4367E1426D91D001BF157 /* DeathSplat.m */; };
 		B2B5376D140DA6AE001317FC /* asthmapediaAnimalFur.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B53767140DA6AE001317FC /* asthmapediaAnimalFur.png */; };
 		B2B5376E140DA6AF001317FC /* asthmapediaCold.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B53768140DA6AE001317FC /* asthmapediaCold.png */; };
 		B2B5376F140DA6AF001317FC /* asthmapediaDustMite.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B53769140DA6AE001317FC /* asthmapediaDustMite.png */; };
@@ -92,6 +97,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0320CEB01421A0FD003ECC9F /* PreventerSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerSection.h; sourceTree = "<group>"; };
+		0320CEB11421A0FD003ECC9F /* PreventerSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerSection.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* FishAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* FishAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishAppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +160,10 @@
 		B29BC139140224F300A136FA /* AsthmapediaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AsthmapediaViewController.xib; path = Classes/AsthmapediaViewController.xib; sourceTree = "<group>"; };
 		B29BC190140228D900A136FA /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		B29BC191140228D900A136FA /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
+		B2B4360C1426D423001BF157 /* deathSplat_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathSplat_base.png; sourceTree = "<group>"; };
+		B2B4362C1426D592001BF157 /* TitleImagePholder_NotTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleImagePholder_NotTransparent.png; sourceTree = "<group>"; };
+		B2B4367D1426D91D001BF157 /* DeathSplat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathSplat.h; sourceTree = "<group>"; };
+		B2B4367E1426D91D001BF157 /* DeathSplat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathSplat.m; sourceTree = "<group>"; };
 		B2B53767140DA6AE001317FC /* asthmapediaAnimalFur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaAnimalFur.png; sourceTree = "<group>"; };
 		B2B53768140DA6AE001317FC /* asthmapediaCold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaCold.png; sourceTree = "<group>"; };
 		B2B53769140DA6AE001317FC /* asthmapediaDustMite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaDustMite.png; sourceTree = "<group>"; };
@@ -208,7 +219,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2E052C1141595BB00EABDA0 /* Preventer Lining */,
 				B20718D7140DD1F400A9574C /* Objects */,
 				B29BC1BB14022A6500A136FA /* Views */,
 				B29BC1BA14022A5300A136FA /* Characters */,
@@ -360,6 +370,8 @@
 		B277266014036415004751A1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B2B4362C1426D592001BF157 /* TitleImagePholder_NotTransparent.png */,
+				B2B4360C1426D423001BF157 /* deathSplat_base.png */,
 				B2894C751426A126000CBC62 /* background.png */,
 				861A49D214186BD3004C86D1 /* Level select */,
 				B2E053E214159D7E00EABDA0 /* preventerBubbleGreen.png */,
@@ -376,6 +388,8 @@
 		B29BC1BA14022A5300A136FA /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				B2B4367D1426D91D001BF157 /* DeathSplat.h */,
+				B2B4367E1426D91D001BF157 /* DeathSplat.m */,
 				B277264A1403631C004751A1 /* DustMite.h */,
 				B277264B1403631C004751A1 /* DustMite.m */,
 				B29BC190140228D900A136FA /* Fish.h */,
@@ -388,6 +402,7 @@
 				B257452D1418ACBF009C006B /* SpitProjectile.m */,
 				B264C37D1419B44A0060A85A /* Pollen.h */,
 				B264C37E1419B44A0060A85A /* Pollen.m */,
+				B2E052C1141595BB00EABDA0 /* Preventer Lining */,
 			);
 			name = Characters;
 			sourceTree = "<group>";
@@ -416,6 +431,8 @@
 			children = (
 				B2E053D214159CE200EABDA0 /* PreventerArray.h */,
 				B2E053D314159CE200EABDA0 /* PreventerArray.m */,
+				0320CEB01421A0FD003ECC9F /* PreventerSection.h */,
+				0320CEB11421A0FD003ECC9F /* PreventerSection.m */,
 				B2E053D414159CE200EABDA0 /* PreventerLining.h */,
 				B2E053D514159CE200EABDA0 /* PreventerLining.m */,
 			);
@@ -530,6 +547,8 @@
 				B2894C6714269FFF000CBC62 /* pollen_base.png in Resources */,
 				B2894C6814269FFF000CBC62 /* smoke_base.png in Resources */,
 				B2894C761426A126000CBC62 /* background.png in Resources */,
+				B2B4360D1426D423001BF157 /* deathSplat_base.png in Resources */,
+				B2B4362D1426D592001BF157 /* TitleImagePholder_NotTransparent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +600,8 @@
 				861A49A01418618A004C86D1 /* Sprite.m in Sources */,
 				B257452E1418ACBF009C006B /* SpitProjectile.m in Sources */,
 				B264C37F1419B44A0060A85A /* Pollen.m in Sources */,
+				0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */,
+				B2B4367F1426D91D001BF157 /* DeathSplat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +621,7 @@
 				B257453E1418AE6A009C006B /* SpitProjectile.m in Sources */,
 				B264C4551419B4990060A85A /* Pollen.m in Sources */,
 				B2B9850A141ED66400054DBB /* NewSpriteShould.m in Sources */,
+				B2B437621426DAD6001BF157 /* DeathSplat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

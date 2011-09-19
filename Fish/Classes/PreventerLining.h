@@ -13,16 +13,21 @@
 	float XPos;
 	float YPos;
 	int Health;
-	bool HasBeenHit;
+	bool isLock;
 	
 }
 
 @property float XPos;
 @property float YPos;
 @property int Health;
-@property bool HasBeenHit;
+@property bool isLock;
 
+-(id)init;
 -(void)hit;
+//-(void)setXAndYPoints;
 -(void)isDamage;
+-(void)isDestroy;
+-(void)isRepair;
+
 
 @end
