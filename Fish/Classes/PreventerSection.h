@@ -13,9 +13,10 @@
 	 NSMutableArray *sections;
 }
 
+-(id)initWithViewController:(UIViewController *) ViewUI;
 -(void)createSection:(float)xStart :(float)yStart :(bool)isOnLeftSide;
 -(void)checkCollisionWithTrigger: (DustMite *) mite;
--(void)createMucus:(UIViewController*)viewController;
+//-(void)createMucus;
 -(void)repairSection;
 -(NSMutableArray *)getSection;
 

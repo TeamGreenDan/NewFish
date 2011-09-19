@@ -15,6 +15,7 @@
 	NSMutableArray *rows;
 }
 
+-(id)initWithViewController:(UIViewController *) ViewUI;
 -(void)createArray:(float)xStart :(float)yStart;
 -(void)checkCollisionWithTrigger: (DustMite *) mite;
 //-(void)checkHealthOfLinings;

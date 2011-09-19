@@ -151,18 +151,8 @@ int score = 0;
 		
 		
 		//instantiate the lining
-		theLining = [[PreventerArray alloc] init];
-		[theLining createArray:25 :75];
-		
-		
-		for(PreventerLining *pLining in [theLining getRow]){
-		    [self.view addSubview:pLining];		
-		}
-		
-
-		
-		
-		
+		theLining = [[PreventerArray alloc] initWithViewController: self];
+		[theLining createArray:25 :75];		
 		
     }
     return self;

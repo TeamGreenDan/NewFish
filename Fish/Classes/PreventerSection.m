@@ -8,6 +8,7 @@
 
 #import "PreventerSection.h"
 #import "PreventerLining.h"
+#import "Mucus.h"
 #import <stdlib.h>
 #import <UIKit/UIKit.h>
 
@@ -18,12 +19,23 @@ float xPos;
 float yPos;
 
 int maxNumberOfLining = 3;
-int healthOfSection = 4;
+int healthOfSection = 3;
+Mucus *sectionMucus;
+
+UIViewController *SectionView;
+
+
+-(id)initWithViewController:(UIViewController *) ViewUI{
+	if(self){
+		SectionView = ViewUI;}
+	return self;
+}
 
 -(void)createSection:(float)xStart :(float)yStart: (bool)isOnLeftSide{
 	
 	PreventerLining *tempLining;
 	sections = [[NSMutableArray alloc] init];
+	sectionMucus = [[Mucus alloc] initWithViewController: SectionView];
 	
 	float xPos = xStart;
 	float yPos = yStart;
@@ -42,7 +54,7 @@ int healthOfSection = 4;
 		[tempLining setXAndYPoints];
 		[sections addObject:tempLining];
 		
-		//[self.view addSubview:tempLining];
+		[SectionView.view addSubview:tempLining];
 		
 		if(isOnLeftSide == true){
 			xPos = xPos + xIncrease;}
@@ -60,8 +72,14 @@ int healthOfSection = 4;
 		
 		if(CGRectIntersectsRect(tempLining.frame, mite.frame) && tempLining.hidden == false){
 
-			if(tempLining.isLock){
-				[tempLining hit];}
+			if(tempLining.isLock == false){
+				[tempLining hit];
+				healthOfSection = healthOfSection - 1;
+				
+				//if(healthOfSection == 0){
+					//[self createMucus];
+				//}
+			}
 			
 			[mite rebound];
 		}
@@ -88,22 +106,12 @@ int healthOfSection = 4;
 		}
 	}
 }
-/*
--(void)createMucus: (UIViewController*) viewController{
+
+
+-(void)createMucus{
 	PreventerLining *tempLining = [sections objectAtIndex:0];
-	float tempX = tempLining.XPos;
-	float tempY = tempLining.YPos;
-	
-	tempX = tempX - 25;
-	tempY = tempY - 25;
-	
-	CGRect frame = CGRectMake(0, 0, 150, 50);
-	UIView *mucusView = [[UIView alloc] initWithFrame: frame];
-	[mucusView setBackgroundColor:(255)];
-	CGPoint mucusPoints = CGPointMake(tempX, tempY);
-	[mucusView setCenter:(mucusPoints)];
-	
-}*/
+	[sectionMucus spawnMucus: tempLining];
+}
 
 
 //-(PreventerLining *)getLastPoints{
@@ -130,3 +138,4 @@ int healthOfSection = 4;
 }
 
 @end
+

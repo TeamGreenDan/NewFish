@@ -14,7 +14,13 @@
 
 @implementation PreventerArray
 //PreventerSection tempSection;
+UIViewController *arrayView;
 
+-(id)initWithViewController:(UIViewController *) ViewUI{
+	if(self){
+		arrayView = ViewUI;}
+	return self;
+}
 
 -(void)createArray: (float) xStart: (float) yStart{		
 	rows = [[NSMutableArray alloc] init];
@@ -26,7 +32,7 @@
 	//[self createArrayLoop: currentX: currentY: true];
 	
 	for(int index = 0; index < 24; index++){
-		tempSection = [[PreventerSection alloc] init];
+		tempSection = [[PreventerSection alloc] initWithViewController: arrayView];
 		[tempSection createSection: currentX: currentY: true];
 		[rows addObject: tempSection];
 		
@@ -42,7 +48,7 @@
 	//[self createArrayLoop: currentX: currentY: false];
 	
 	for(int index = 0; index < 24; index++){
-		tempSection = [[PreventerSection alloc] init];
+		tempSection = [[PreventerSection alloc] initWithViewController: arrayView];
 		[tempSection createSection: currentX: currentY: false];
 		[rows addObject: tempSection];
 		
