@@ -12,6 +12,7 @@
 @interface SpitProjectile : Sprite {
 
 }
-- (id)init :(int)randomX : (int)randomY;
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish;
+-(void) moveSpit : (NSMutableArray *) passedArray;
 
 @end

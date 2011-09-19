@@ -27,7 +27,7 @@
 	
 	for(int index = 0; index < 24; index++){
 		tempSection = [[PreventerSection alloc] init];
-		[tempSection createSection: currentX: currentY: true];
+		[tempSection createSection: currentX: currentY: TRUE];
 		[rows addObject: tempSection];
 		
 		currentY = currentY + 40;
@@ -43,7 +43,7 @@
 	
 	for(int index = 0; index < 24; index++){
 		tempSection = [[PreventerSection alloc] init];
-		[tempSection createSection: currentX: currentY: false];
+		[tempSection createSection: currentX: currentY: FALSE];
 		[rows addObject: tempSection];
 		
 		currentY = currentY + 40;

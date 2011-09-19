@@ -16,12 +16,14 @@
 float pollen_radius = 30;
 
 
-- (id)init :(int)randomX : (int)randomY {
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish{
     self = [super initWithImage:[UIImage imageNamed:@"pollen_base.png"]];
     if(self){
 		health = 1;
 		XPos = randomX;
 		YPos = randomY;
+		speed = 5;
+		aFish = passedFish;
         [self setFrame:CGRectMake(XPos, YPos, 51, 55)];
 		
 		

@@ -10,10 +10,12 @@
 
 @interface AnimalFur : Sprite
 {
-	
+	NSMutableArray *mySpits;
 }
 
--(id) init:(int)randomX :(int)randomY;
+@property (nonatomic, retain) NSMutableArray *mySpits;
+
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish;
 
 -(void) chooseTarget;
 -(void)spitProjectile;

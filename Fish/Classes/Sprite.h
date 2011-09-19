@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Fish;
+#import "PreventerArray.h"
+#import "Fish.h"
+
 
 @interface Sprite : UIImageView {
 	float XSpeed;
@@ -22,6 +24,9 @@
 	float boundsRight;
 	float boundsBottom;
 	int health;
+	float speed;
+	
+	Fish *aFish;
 }
 
 @property float XSpeed;
@@ -29,19 +34,22 @@
 
 @property float XPos;
 @property float YPos;
+@property float speed;
 @property float boundsTopAndLeft;
 @property float boundsRight;
 @property float boundsBottom;
 @property int randomNum;
 @property float direction;
 @property int health;
+@property (nonatomic, retain)Fish *aFish;
+@property (nonatomic, retain) PreventerArray *theLining;
 
 
 
--(void) update: (Fish *)aFish;
+-(void) updateMe;
 -(void) hit;
 -(void)	rebound;
--(void)	move: (Fish *)aFish;
+-(void)	move;
 -(void) chooseTarget;
 -(void) chooseLining;
 -(void) takeDamage;

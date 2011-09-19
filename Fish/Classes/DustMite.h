@@ -13,7 +13,7 @@
 
 }
 
--(id) init:(int)randomX :(int)randomY;
+-(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (PreventerArray *) passedArray;
 
 
 @end

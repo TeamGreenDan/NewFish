@@ -38,10 +38,10 @@
 	
 	//set up the scroll view to behave how we want.
 	[scrollView setScrollEnabled:YES];
-	int contentSize = (768 * 6);
+	int contentSize = (600 * 6);
 	[scrollView setContentSize:CGSizeMake(contentSize, 360)];
 	[scrollView setClipsToBounds:FALSE];
-	[scrollView setPagingEnabled:YES];
+	//[scrollView setPagingEnabled:YES];
 	[scrollView setShowsHorizontalScrollIndicator:NO];
 	
 	
@@ -68,7 +68,8 @@
 	//the variables
 	int imageW = 477;
 	int imageH = 831;
-	int gap = 384;
+	int gap = 300;
+	//384
 	
 	int xcoord;
 	if (location == 0) {//if first then just make it on gap away from edge of screen

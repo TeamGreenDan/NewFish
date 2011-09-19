@@ -7,35 +7,52 @@
 //
 
 #import "SpitProjectile.h"
+#import <math.h>
 
 
 @implementation SpitProjectile
 
-- (id)init :(int)randomX : (int)randomY {
-    self = [super initWithImage:[UIImage imageNamed:@"preventerBubbleGreen.png"]];
+
+
+
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish{
+    self = [super initWithImage:[UIImage imageNamed:@"spitBubble.png"]];
     if(self){
 		
 		XPos = randomX;
-		YPos = randomY;
+		YPos = randomY;		
+		speed = 5;
+		targetX = (int)passedFish.XPos;
+		targetY = (int)passedFish.YPos;
+		
         [self setFrame:CGRectMake(XPos, YPos, 25, 25)];
 		
-		[NSTimer scheduledTimerWithTimeInterval:1/30.0 target:self selector:@selector(move) userInfo:nil repeats:true];
-		self.chooseTarget;
+		//[NSTimer scheduledTimerWithTimeInterval:1/30.0 target:self selector:@selector(move) userInfo:nil repeats:true];
+
 		
 		
     }
     return self;
 }
 
-//### Overides superclass
--(void) move{
-	XPos += 5;
+-(void) moveSpit : (NSMutableArray *) passedArray{
 	
-	if(XPos > 1500){
-		[self removeFromSuperview];		
+	if ((int)XPos > (5 - targetX) && (int)XPos < (5 + targetX) && (int)YPos > (5 - targetY) && (int)YPos < (5 + targetY)) {
+		[self removeFromSuperview];
+		[aFish hit];
+		[passedArray removeObjectAtIndex:0];
 		[self release];
-		printf("You Crashed Because spit isn't removing itself Properly. Sorry");
+		
 	}
+	
+	//Works out the direction to head to get to the target
+	float dxTarget = XPos - targetX;
+	float dyTarget = YPos - targetY;	
+	direction = atan2(dyTarget, dxTarget);
+	
+	//works out the speed to apply for the given direction	
+	XPos -= speed * cos(direction);
+	YPos -= speed * sin(direction);
 	[self setCenter:CGPointMake(XPos, YPos)];
 }
 

@@ -80,7 +80,7 @@
 					<object class="IBUIScrollView" id="403778691">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{0, 36}, {768, 831}}</string>
+						<string key="NSFrame">{{20, 41}, {728, 831}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -207,7 +207,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDIgAAxFcAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDZAAAxFjAAA</bytes>
 					</object>
 				</object>
 			</object>

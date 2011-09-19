@@ -110,6 +110,15 @@ int score = 0;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
 		
+		//instantiate the lining
+		theLining = [[PreventerArray alloc] init];
+		[theLining createArray:25 :75];
+		
+		
+		for(PreventerLining *pLining in [theLining getRow]){
+		    [self.view addSubview:pLining];		
+		}
+		
 		//Prevents Screen Locking
 		[UIApplication sharedApplication].idleTimerDisabled = YES;
 				//instatiate timer
@@ -120,20 +129,20 @@ int score = 0;
 		[self.view addSubview:theFish];
 		triggersArray = [[NSMutableArray alloc]initWithCapacity:10];
 		
-		//instantiate the mite
+		//instantiate the triggers
 		BOOL spawnSwitch1 = FALSE;
 		BOOL spawnSwitch2 = FALSE;
 		for (int i = 0; i < 20; i++) {
 			if (spawnSwitch1 == FALSE ) {
 				if (spawnSwitch2 == FALSE) {
-					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):200];
+					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):200 : theFish];
 					[self.view addSubview:theFur];
 					[triggersArray insertObject:theFur atIndex:i];
 					
 					spawnSwitch2 = TRUE;
 				}
 				else {
-					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):200];
+					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):200 : theFish];
 					[self.view addSubview:aPollen];
 					[triggersArray insertObject:aPollen atIndex:i];
 					spawnSwitch2 = FALSE;
@@ -141,7 +150,7 @@ int score = 0;
 				spawnSwitch1 = TRUE;
 			}
 			else {
-				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):200];			
+				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):200 : theFish : theLining];			
 				[self.view addSubview:theMite];
 				[triggersArray insertObject:theMite atIndex:i];
 				spawnSwitch1 = FALSE;
@@ -149,19 +158,6 @@ int score = 0;
 			
 			
 		}
-		
-		
-		//instantiate the lining
-		theLining = [[PreventerArray alloc] init];
-		[theLining createArray:25 :75];
-		
-		
-		for(PreventerLining *pLining in [theLining getRow]){
-		    [self.view addSubview:pLining];		
-		}
-		
-
-		
 		
 		
 		
@@ -172,8 +168,8 @@ int score = 0;
 -(void)updateGame{
 	int i = ([triggersArray count]-1);
 	for (i; i >= 0; i--) {
-		DustMite *updateMite = [triggersArray objectAtIndex:i];
-		[updateMite update:theFish];
+		Sprite *updateTrigger = [triggersArray objectAtIndex:i];
+		[updateTrigger updateMe];
 	}
 	[self checkCollision];
 }

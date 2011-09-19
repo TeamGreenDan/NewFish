@@ -9,8 +9,10 @@
 #import "Sprite.h"
 #import "Fish.h"
 #import "Pollen.h"
+#import "DustMite.h"
 #import <stdlib.h>
 #import <math.h>
+#import "PreventerArray.h"
 
 
 
@@ -20,12 +22,15 @@
 
 @synthesize XPos;
 @synthesize YPos;
+@synthesize speed;
 @synthesize randomNum;
 @synthesize direction;
 @synthesize boundsTopAndLeft;
 @synthesize boundsRight;
 @synthesize boundsBottom;
 @synthesize health;
+@synthesize theLining;
+@synthesize aFish;
 
 //@synthesize timer;
 
@@ -34,8 +39,9 @@ float screen_height = 1002;
 
 
 
--(void) update: (Fish *)aFish{
-	[self move:aFish];
+
+-(void) updateMe{
+	[self move];
 
 }
 
@@ -104,11 +110,10 @@ float screen_height = 1002;
 		YPos += ddy;
 
 }
--(void) move: (Fish *) aFish{
+-(void) move{
 	
 	float k = .05;					//strength of the avoidance spring
     float restingDistance = 300;	//distance the spring starts to take effect
-	float speed = 3;				//the speed to travel.
     
 	
 	
@@ -126,11 +131,12 @@ float screen_height = 1002;
 	
 	
 	//works out the distance between the Fish and the trigger
-	float dxFish =  aFish.XPos - XPos;
-	float dyFish =  aFish.YPos - YPos;	
-	float distance = sqrtf(dxFish*dxFish + dyFish*dyFish);
 
-	if ([self isKindOfClass:[Pollen class]]) {		
+
+	if ([self isKindOfClass:[Pollen class]]) {	
+		float dxFish =  aFish.XPos - XPos;
+		float dyFish =  aFish.YPos - YPos;	
+		float distance = sqrtf(dxFish*dxFish + dyFish*dyFish);
 		[self calculateFishAvoidance: distance dyFish: dyFish restingDistance: restingDistance k: k dxFish: dxFish];
 	}
 	
@@ -157,17 +163,20 @@ float screen_height = 1002;
 	boundsBottom = 1000;
 	boundsTopAndLeft = 0;
 	boundsRight = 768;
-	
-	int chance = arc4random() % 20;
-	
-	if(chance >= 10){
-		targetX = arc4random() % 150 + 618;
+	if ([self isKindOfClass:[DustMite class]]) {
+		
 	}
-	else {
-		targetX = arc4random() % 150;
+	else {		
+		int chance = arc4random() % 20;
+		
+		if(chance >= 10){
+			targetX = arc4random() % 150 + 618;
+		}
+		else {
+			targetX = arc4random() % 150;
+		}
+		targetY = arc4random() % 1000;
 	}
-	targetY = arc4random() % 1000;
-
 }
 
 -(void) takeDamage{

@@ -39,6 +39,7 @@
 		B225D984140628A600DF3B3F /* AnimalFur.m in Sources */ = {isa = PBXBuildFile; fileRef = B225D983140628A600DF3B3F /* AnimalFur.m */; };
 		B225D9951406299500DF3B3F /* AnimalFur.m in Sources */ = {isa = PBXBuildFile; fileRef = B225D983140628A600DF3B3F /* AnimalFur.m */; };
 		B2283FC7140B3CF3002EB2A8 /* Suplexmentary Comic NC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2283FC6140B3CF3002EB2A8 /* Suplexmentary Comic NC.ttf */; };
+		B234BA29142747AF00EB3934 /* spitBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = B234BA28142747AF00EB3934 /* spitBubble.png */; };
 		B257452E1418ACBF009C006B /* SpitProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = B257452D1418ACBF009C006B /* SpitProjectile.m */; };
 		B257453E1418AE6A009C006B /* SpitProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = B257452D1418ACBF009C006B /* SpitProjectile.m */; };
 		B264C37F1419B44A0060A85A /* Pollen.m in Sources */ = {isa = PBXBuildFile; fileRef = B264C37E1419B44A0060A85A /* Pollen.m */; };
@@ -136,6 +137,7 @@
 		B225D982140628A600DF3B3F /* AnimalFur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalFur.h; sourceTree = "<group>"; };
 		B225D983140628A600DF3B3F /* AnimalFur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalFur.m; sourceTree = "<group>"; };
 		B2283FC6140B3CF3002EB2A8 /* Suplexmentary Comic NC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Suplexmentary Comic NC.ttf"; sourceTree = "<group>"; };
+		B234BA28142747AF00EB3934 /* spitBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spitBubble.png; sourceTree = "<group>"; };
 		B257452C1418ACBF009C006B /* SpitProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpitProjectile.h; sourceTree = "<group>"; };
 		B257452D1418ACBF009C006B /* SpitProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpitProjectile.m; sourceTree = "<group>"; };
 		B264C37D1419B44A0060A85A /* Pollen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pollen.h; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 		B277266014036415004751A1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B234BA28142747AF00EB3934 /* spitBubble.png */,
 				B2B4362C1426D592001BF157 /* TitleImagePholder_NotTransparent.png */,
 				B2B4360C1426D423001BF157 /* deathSplat_base.png */,
 				B2894C751426A126000CBC62 /* background.png */,
@@ -388,20 +391,20 @@
 		B29BC1BA14022A5300A136FA /* Characters */ = {
 			isa = PBXGroup;
 			children = (
-				B2B4367D1426D91D001BF157 /* DeathSplat.h */,
-				B2B4367E1426D91D001BF157 /* DeathSplat.m */,
-				B277264A1403631C004751A1 /* DustMite.h */,
-				B277264B1403631C004751A1 /* DustMite.m */,
-				B29BC190140228D900A136FA /* Fish.h */,
-				B29BC191140228D900A136FA /* Fish.m */,
-				B225D982140628A600DF3B3F /* AnimalFur.h */,
-				B225D983140628A600DF3B3F /* AnimalFur.m */,
 				861A499E1418618A004C86D1 /* Sprite.h */,
 				861A499F1418618A004C86D1 /* Sprite.m */,
-				B257452C1418ACBF009C006B /* SpitProjectile.h */,
-				B257452D1418ACBF009C006B /* SpitProjectile.m */,
+				B277264A1403631C004751A1 /* DustMite.h */,
+				B277264B1403631C004751A1 /* DustMite.m */,
+				B225D982140628A600DF3B3F /* AnimalFur.h */,
+				B225D983140628A600DF3B3F /* AnimalFur.m */,
 				B264C37D1419B44A0060A85A /* Pollen.h */,
 				B264C37E1419B44A0060A85A /* Pollen.m */,
+				B2B4367D1426D91D001BF157 /* DeathSplat.h */,
+				B2B4367E1426D91D001BF157 /* DeathSplat.m */,
+				B29BC190140228D900A136FA /* Fish.h */,
+				B29BC191140228D900A136FA /* Fish.m */,
+				B257452C1418ACBF009C006B /* SpitProjectile.h */,
+				B257452D1418ACBF009C006B /* SpitProjectile.m */,
 				B2E052C1141595BB00EABDA0 /* Preventer Lining */,
 			);
 			name = Characters;
@@ -549,6 +552,7 @@
 				B2894C761426A126000CBC62 /* background.png in Resources */,
 				B2B4360D1426D423001BF157 /* deathSplat_base.png in Resources */,
 				B2B4362D1426D592001BF157 /* TitleImagePholder_NotTransparent.png in Resources */,
+				B234BA29142747AF00EB3934 /* spitBubble.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,6 +733,7 @@
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
