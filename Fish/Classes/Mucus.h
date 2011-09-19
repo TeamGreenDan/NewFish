@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PreventerLining.h"
 
 
 @interface Mucus : NSObject {
@@ -14,5 +15,6 @@
 }
 
 -(id)initWithViewController:(UIViewController *) ViewUI;
+-(void)spawnMucus: (PreventerLining *) destryLining;
 
 @end
