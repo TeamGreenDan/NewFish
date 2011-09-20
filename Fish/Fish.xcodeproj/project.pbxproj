@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320CEB11421A0FD003ECC9F /* PreventerSection.m */; };
 		1D3623260D0F684500981E51 /* FishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FishAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -44,6 +43,8 @@
 		B257453E1418AE6A009C006B /* SpitProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = B257452D1418ACBF009C006B /* SpitProjectile.m */; };
 		B264C37F1419B44A0060A85A /* Pollen.m in Sources */ = {isa = PBXBuildFile; fileRef = B264C37E1419B44A0060A85A /* Pollen.m */; };
 		B264C4551419B4990060A85A /* Pollen.m in Sources */ = {isa = PBXBuildFile; fileRef = B264C37E1419B44A0060A85A /* Pollen.m */; };
+		B26C8A2D1428680A00FB13D7 /* PreventerBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C8A2C1428680A00FB13D7 /* PreventerBubble.m */; };
+		B26C8A5914286BAB00FB13D7 /* PreventerWall.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C8A5814286BAB00FB13D7 /* PreventerWall.m */; };
 		B277264C1403631C004751A1 /* DustMite.m in Sources */ = {isa = PBXBuildFile; fileRef = B277264B1403631C004751A1 /* DustMite.m */; };
 		B27726551403635A004751A1 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27726541403635A004751A1 /* GameViewController.xib */; };
 		B277265814036373004751A1 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B277265714036373004751A1 /* GameViewController.m */; };
@@ -69,6 +70,7 @@
 		B2B53770140DA6AF001317FC /* asthmapediaFluVirus.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B5376A140DA6AE001317FC /* asthmapediaFluVirus.png */; };
 		B2B53771140DA6AF001317FC /* asthmapediaPollen.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B5376B140DA6AE001317FC /* asthmapediaPollen.png */; };
 		B2B53772140DA6AF001317FC /* asthmapediaSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B5376C140DA6AE001317FC /* asthmapediaSmoke.png */; };
+		B2B83A6B1428189B002D9D2F /* AppleCasual.dfont in Resources */ = {isa = PBXBuildFile; fileRef = B2B83A6A1428189B002D9D2F /* AppleCasual.dfont */; };
 		B2B9850A141ED66400054DBB /* NewSpriteShould.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B98509141ED66400054DBB /* NewSpriteShould.m */; };
 		B2C8673C140B19E100E2EA14 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8673A140B19E100E2EA14 /* OptionsViewController.m */; };
 		B2C8673D140B19E100E2EA14 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C8673B140B19E100E2EA14 /* OptionsViewController.xib */; };
@@ -81,8 +83,6 @@
 		B2C95301140B3A63007639A4 /* menuButtonPress.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C952FD140B3A63007639A4 /* menuButtonPress.png */; };
 		B2C95302140B3A63007639A4 /* pauseButtonPress.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C952FE140B3A63007639A4 /* pauseButtonPress.png */; };
 		B2D8123E1403194F00F6CEF2 /* AccController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D8123D1403194F00F6CEF2 /* AccController.m */; };
-		B2E053D614159CE200EABDA0 /* PreventerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E053D314159CE200EABDA0 /* PreventerArray.m */; };
-		B2E053D714159CE200EABDA0 /* PreventerLining.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E053D514159CE200EABDA0 /* PreventerLining.m */; };
 		B2E053E414159D7E00EABDA0 /* preventerBubbleGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E053E214159D7E00EABDA0 /* preventerBubbleGreen.png */; };
 		B2E053E514159D7E00EABDA0 /* preventerBubbleRed.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E053E314159D7E00EABDA0 /* preventerBubbleRed.png */; };
 /* End PBXBuildFile section */
@@ -98,8 +98,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0320CEB01421A0FD003ECC9F /* PreventerSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerSection.h; sourceTree = "<group>"; };
-		0320CEB11421A0FD003ECC9F /* PreventerSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerSection.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* FishAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* FishAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishAppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +140,10 @@
 		B257452D1418ACBF009C006B /* SpitProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpitProjectile.m; sourceTree = "<group>"; };
 		B264C37D1419B44A0060A85A /* Pollen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pollen.h; sourceTree = "<group>"; };
 		B264C37E1419B44A0060A85A /* Pollen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pollen.m; sourceTree = "<group>"; };
+		B26C8A2B1428680A00FB13D7 /* PreventerBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerBubble.h; sourceTree = "<group>"; };
+		B26C8A2C1428680A00FB13D7 /* PreventerBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerBubble.m; sourceTree = "<group>"; };
+		B26C8A5714286BAB00FB13D7 /* PreventerWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerWall.h; sourceTree = "<group>"; };
+		B26C8A5814286BAB00FB13D7 /* PreventerWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerWall.m; sourceTree = "<group>"; };
 		B26DC60714269D96006EBE0E /* animalFur_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalFur_base.png; sourceTree = "<group>"; };
 		B26DC60814269D96006EBE0E /* cold_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cold_base.png; sourceTree = "<group>"; };
 		B26DC60914269D96006EBE0E /* dustMite_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dustMite_base.png; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		B2B5376A140DA6AE001317FC /* asthmapediaFluVirus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaFluVirus.png; sourceTree = "<group>"; };
 		B2B5376B140DA6AE001317FC /* asthmapediaPollen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaPollen.png; sourceTree = "<group>"; };
 		B2B5376C140DA6AE001317FC /* asthmapediaSmoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaSmoke.png; sourceTree = "<group>"; };
+		B2B83A6A1428189B002D9D2F /* AppleCasual.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleCasual.dfont; sourceTree = "<group>"; };
 		B2B98508141ED66400054DBB /* NewSpriteShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSpriteShould.h; sourceTree = "<group>"; };
 		B2B98509141ED66400054DBB /* NewSpriteShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSpriteShould.m; sourceTree = "<group>"; };
 		B2C86739140B19E100E2EA14 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
@@ -189,10 +192,6 @@
 		B2C952FE140B3A63007639A4 /* pauseButtonPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseButtonPress.png; sourceTree = "<group>"; };
 		B2D8123C1403194500F6CEF2 /* AccController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccController.h; sourceTree = "<group>"; };
 		B2D8123D1403194F00F6CEF2 /* AccController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccController.m; sourceTree = "<group>"; };
-		B2E053D214159CE200EABDA0 /* PreventerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerArray.h; sourceTree = "<group>"; };
-		B2E053D314159CE200EABDA0 /* PreventerArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerArray.m; sourceTree = "<group>"; };
-		B2E053D414159CE200EABDA0 /* PreventerLining.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreventerLining.h; sourceTree = "<group>"; };
-		B2E053D514159CE200EABDA0 /* PreventerLining.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreventerLining.m; sourceTree = "<group>"; };
 		B2E053E214159D7E00EABDA0 /* preventerBubbleGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preventerBubbleGreen.png; sourceTree = "<group>"; };
 		B2E053E314159D7E00EABDA0 /* preventerBubbleRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preventerBubbleRed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				B2283FC6140B3CF3002EB2A8 /* Suplexmentary Comic NC.ttf */,
+				B2B83A6A1428189B002D9D2F /* AppleCasual.dfont */,
 				B277266014036415004751A1 /* Images */,
 				B277265E140363FC004751A1 /* XIBs */,
 				8D1107310486CEB800E47090 /* Fish-Info.plist */,
@@ -308,6 +308,10 @@
 				B2D8123D1403194F00F6CEF2 /* AccController.m */,
 				B20718D8140DD22800A9574C /* ScrollingController.h */,
 				B20718D9140DD22800A9574C /* ScrollingController.m */,
+				B26C8A2B1428680A00FB13D7 /* PreventerBubble.h */,
+				B26C8A2C1428680A00FB13D7 /* PreventerBubble.m */,
+				B26C8A5714286BAB00FB13D7 /* PreventerWall.h */,
+				B26C8A5814286BAB00FB13D7 /* PreventerWall.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -397,15 +401,14 @@
 				B277264B1403631C004751A1 /* DustMite.m */,
 				B225D982140628A600DF3B3F /* AnimalFur.h */,
 				B225D983140628A600DF3B3F /* AnimalFur.m */,
+				B257452C1418ACBF009C006B /* SpitProjectile.h */,
+				B257452D1418ACBF009C006B /* SpitProjectile.m */,
 				B264C37D1419B44A0060A85A /* Pollen.h */,
 				B264C37E1419B44A0060A85A /* Pollen.m */,
 				B2B4367D1426D91D001BF157 /* DeathSplat.h */,
 				B2B4367E1426D91D001BF157 /* DeathSplat.m */,
 				B29BC190140228D900A136FA /* Fish.h */,
 				B29BC191140228D900A136FA /* Fish.m */,
-				B257452C1418ACBF009C006B /* SpitProjectile.h */,
-				B257452D1418ACBF009C006B /* SpitProjectile.m */,
-				B2E052C1141595BB00EABDA0 /* Preventer Lining */,
 			);
 			name = Characters;
 			sourceTree = "<group>";
@@ -427,19 +430,6 @@
 				B2C867C8140B2DDD00E2EA14 /* CreditsViewController.m */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		B2E052C1141595BB00EABDA0 /* Preventer Lining */ = {
-			isa = PBXGroup;
-			children = (
-				B2E053D214159CE200EABDA0 /* PreventerArray.h */,
-				B2E053D314159CE200EABDA0 /* PreventerArray.m */,
-				0320CEB01421A0FD003ECC9F /* PreventerSection.h */,
-				0320CEB11421A0FD003ECC9F /* PreventerSection.m */,
-				B2E053D414159CE200EABDA0 /* PreventerLining.h */,
-				B2E053D514159CE200EABDA0 /* PreventerLining.m */,
-			);
-			name = "Preventer Lining";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,6 +543,7 @@
 				B2B4360D1426D423001BF157 /* deathSplat_base.png in Resources */,
 				B2B4362D1426D592001BF157 /* TitleImagePholder_NotTransparent.png in Resources */,
 				B234BA29142747AF00EB3934 /* spitBubble.png in Resources */,
+				B2B83A6B1428189B002D9D2F /* AppleCasual.dfont in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,13 +590,12 @@
 				B2C867CA140B2DDD00E2EA14 /* CreditsViewController.m in Sources */,
 				B2C867CF140B2E1500E2EA14 /* LevelSelectViewController.m in Sources */,
 				B20718DA140DD22800A9574C /* ScrollingController.m in Sources */,
-				B2E053D614159CE200EABDA0 /* PreventerArray.m in Sources */,
-				B2E053D714159CE200EABDA0 /* PreventerLining.m in Sources */,
 				861A49A01418618A004C86D1 /* Sprite.m in Sources */,
 				B257452E1418ACBF009C006B /* SpitProjectile.m in Sources */,
 				B264C37F1419B44A0060A85A /* Pollen.m in Sources */,
-				0320CEB21421A0FD003ECC9F /* PreventerSection.m in Sources */,
 				B2B4367F1426D91D001BF157 /* DeathSplat.m in Sources */,
+				B26C8A2D1428680A00FB13D7 /* PreventerBubble.m in Sources */,
+				B26C8A5914286BAB00FB13D7 /* PreventerWall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

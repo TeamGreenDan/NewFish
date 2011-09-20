@@ -14,10 +14,10 @@
 #import "AnimalFur.h"
 #import "Pollen.h"
 #import "DeathSplat.h"
-#import "PreventerLining.h"
-#import "PreventerArray.h"
 #import <stdlib.h>
 #import <UIKit/UIKit.h>
+#import "PreventerBubble.h"
+#import "PreventerWall.h"
 
 
 @implementation GameViewController
@@ -27,10 +27,13 @@
 @synthesize levelSelectButton;
 @synthesize mainMenuButton;
 @synthesize pauseButton;
+@synthesize backgroundImage;
+@synthesize pauseScreenFade;
 
-PreventerArray *theLining;
+
 Fish *theFish;
 NSMutableArray *triggersArray;
+PreventerWall *preventerArray;
 NSTimer *gameTimer;
 int score = 0;
 
@@ -49,6 +52,8 @@ int score = 0;
  */
 -(IBAction)pause{
 	
+	
+	
 	//Prevents Screen Locking
 	[UIApplication sharedApplication].idleTimerDisabled = NO;
 	//stop the current characters from moving
@@ -56,6 +61,8 @@ int score = 0;
 
 	[self toggleTimer];
 	//show the menu buttons
+	
+	pauseScreenFade.hidden = FALSE;
 	continueButton.hidden = FALSE;
 	levelSelectButton.hidden = FALSE;
 	mainMenuButton.hidden = FALSE;
@@ -67,6 +74,8 @@ int score = 0;
  * What to do when the continue button is pressed
  */
 -(IBAction)continueGame{
+	
+	
 	//Prevents Screen Locking
 	[UIApplication sharedApplication].idleTimerDisabled = YES;
 	
@@ -77,6 +86,7 @@ int score = 0;
 	[self toggleTimer];	
 	
 	//hide the menu buttons
+	pauseScreenFade.hidden = TRUE;
 	continueButton.hidden = TRUE;
 	levelSelectButton.hidden = TRUE;
 	mainMenuButton.hidden = TRUE;
@@ -109,15 +119,11 @@ int score = 0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		
-		//instantiate the lining
-		theLining = [[PreventerArray alloc] init];
-		[theLining createArray:25 :75];
+
 		
 		
-		for(PreventerLining *pLining in [theLining getRow]){
-		    [self.view addSubview:pLining];		
-		}
+		preventerArray = [[PreventerWall alloc] init:self.view];
+
 		
 		//Prevents Screen Locking
 		[UIApplication sharedApplication].idleTimerDisabled = YES;
@@ -127,7 +133,8 @@ int score = 0;
 		//instantiate the fish
 		theFish = [[Fish alloc] init];
 		[self.view addSubview:theFish];
-		triggersArray = [[NSMutableArray alloc]initWithCapacity:10];
+		[self.view sendSubviewToBack:theFish];
+		triggersArray = [[NSMutableArray alloc]init];
 		
 		//instantiate the triggers
 		BOOL spawnSwitch1 = FALSE;
@@ -135,30 +142,50 @@ int score = 0;
 		for (int i = 0; i < 20; i++) {
 			if (spawnSwitch1 == FALSE ) {
 				if (spawnSwitch2 == FALSE) {
-					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):200 : theFish];
+					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray];
 					[self.view addSubview:theFur];
+					[self.view sendSubviewToBack:theFur];
 					[triggersArray insertObject:theFur atIndex:i];
 					
 					spawnSwitch2 = TRUE;
 				}
 				else {
-					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):200 : theFish];
+					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray];
 					[self.view addSubview:aPollen];
+					[self.view sendSubviewToBack:aPollen];
 					[triggersArray insertObject:aPollen atIndex:i];
 					spawnSwitch2 = FALSE;
 				}
 				spawnSwitch1 = TRUE;
 			}
 			else {
-				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):200 : theFish : theLining];			
+				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray];			
 				[self.view addSubview:theMite];
+				[self.view sendSubviewToBack:theMite];
 				[triggersArray insertObject:theMite atIndex:i];
 				spawnSwitch1 = FALSE;
 			}
-			
+	/*
+		DustMite *theMite = [[DustMite alloc] init:(300):200 : theFish : preventerArray : 0 : triggersArray];			
+		[self.view addSubview:theMite];
+		[self.view sendSubviewToBack:theMite];
+		[triggersArray addObject:theMite];
+		
+		theMite = [[DustMite alloc] init:(300 + (20)):200 : theFish : preventerArray : 1 : triggersArray];			
+		[self.view addSubview:theMite];
+		[self.view sendSubviewToBack:theMite];
+		[triggersArray addObject:theMite];
+		
+		theMite = [[DustMite alloc] init:(300 + (20)):200 : theFish : preventerArray : 2 : triggersArray];			
+		[self.view addSubview:theMite];
+		[self.view sendSubviewToBack:theMite];
+		[triggersArray addObject:theMite];*/
+		
+		
+		
+			[self.view sendSubviewToBack:backgroundImage];
 			
 		}
-		
 		
 		
     }
@@ -171,61 +198,10 @@ int score = 0;
 		Sprite *updateTrigger = [triggersArray objectAtIndex:i];
 		[updateTrigger updateMe];
 	}
-	[self checkCollision];
+	[self.view sendSubviewToBack:backgroundImage];
 }
 
--(void)checkCollision
-{
-	int i = ([triggersArray count]-1);
-	for (i; i >= 0; i--) {
-		
-		DustMite *collisionTrigger;
-		collisionTrigger = [triggersArray objectAtIndex:i];
-		
-		if(theFish.YPos > (collisionTrigger.YPos-40) && theFish.YPos < (collisionTrigger.YPos +40)){
-			if(theFish.XPos > (collisionTrigger.XPos-40) && theFish.XPos < (collisionTrigger.XPos +40))
-			{
-				printf("HIT! numMites = %d\n", [triggersArray count]);
-				
-				
-				[theFish hit];
-				[collisionTrigger takeDamage];
-				if (collisionTrigger.health == 0) {
-					
-					[collisionTrigger removeFromSuperview];
-					DeathSplat *aSplat = [[DeathSplat alloc] init: collisionTrigger.XPos : collisionTrigger.YPos];
-					[self.view addSubview:aSplat];
-					[triggersArray removeObjectAtIndex:i];
-					[collisionTrigger release];
-					
-					//calculate the score and update the score label	
-					score = score + 10;		
-					NSString *theScore = [NSString stringWithFormat:@"Score: %i",score];			  
-					[scoreLabel setText:theScore];
-					[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-				}
-				
-				//Temp Win Condition
-				printf("HIT! numMites = %d\n", [triggersArray count]);
-				if ([triggersArray count]  < 1) {
-					printf("happend/n");
-					UIAlertView *alertWithOkButto = alertWithOkButto = [[UIAlertView alloc] initWithTitle:@"WIN"
-																								  message:@"YOU HAVE WON! \n YOU'RE THE KING" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-					
-					[alertWithOkButto show];
-					[alertWithOkButto release];
-				}
-			}
-		}
-	}
-	
-	for(DustMite *mite in triggersArray){
-		[theLining checkCollisionWithTrigger: mite];
-	}
-	
-	//[theLining checkHealthOfLinings];
-	
-}
+
 
 
 
@@ -233,10 +209,10 @@ int score = 0;
 - (void)viewDidLoad {
 	
 	//set all the Fonts to our games font
-	[continueButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[levelSelectButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[mainMenuButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+	[continueButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[levelSelectButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[mainMenuButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[scoreLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
 	/*
 	 ............  ...................   . .     . ............................................  . ...... $M. . .................................
 	 .   .  ..  ................... 7MMM~ .:MMMMMMI..,,,,,, .... .   .... .....  ..........  .?NMMMMMM+M~..=M. 8MMMMMMMMO ........................

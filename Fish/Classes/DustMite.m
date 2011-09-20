@@ -7,7 +7,6 @@
 //
 
 #import "DustMite.h"
-#import "PreventerArray.h"
 
 @implementation DustMite
 
@@ -16,7 +15,7 @@
 float sprite_radius = 25;
 
 
-- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish : (PreventerArray *) passedArray {
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray{
     self = [super initWithImage:[UIImage imageNamed:@"dustMite_base.png"]];
     if(self){
 		health = 2;
@@ -24,7 +23,10 @@ float sprite_radius = 25;
 		YPos = randomY;
 		speed = 3;
 		aFish = passedFish;
-		self.theLining = passedArray;
+		index = myIndex;
+		theLining = passedPreventerArray;
+		aTriggerArray = passedTriggerArray;
+		isAttacking = FALSE;
         [self setFrame:CGRectMake(XPos, YPos, 72, 42)];
 		
 

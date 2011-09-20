@@ -7,15 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PreventerArray.h"
 #import "Fish.h"
 
 
 @interface Sprite : UIImageView {
 	float XSpeed;
 	float YSpeed;
-	float XPos;
-	float YPos;
+	int XPos;
+	int YPos;
 	int randomNum;
 	int targetX;
 	int targetY;
@@ -25,15 +24,23 @@
 	float boundsBottom;
 	int health;
 	float speed;
+	int index;
+	
+	bool isAttacking;
 	
 	Fish *aFish;
+	NSMutableArray *aTriggerArray;
+	NSMutableArray *theLining;
+	NSMutableArray *arrayBubbleWasIn;
 }
 
 @property float XSpeed;
 @property float YSpeed;
 
-@property float XPos;
-@property float YPos;
+@property int XPos;
+@property int YPos;
+@property int targetX;
+@property int targetY;
 @property float speed;
 @property float boundsTopAndLeft;
 @property float boundsRight;
@@ -41,17 +48,22 @@
 @property int randomNum;
 @property float direction;
 @property int health;
-@property (nonatomic, retain)Fish *aFish;
-@property (nonatomic, retain) PreventerArray *theLining;
+@property int index;
+@property bool isAttacking;
 
+
+@property (nonatomic, retain)Fish *aFish;
+@property (nonatomic, retain)NSMutableArray *aTriggerArray;
+@property (nonatomic, retain)NSMutableArray *theLining;
+@property (nonatomic, retain)NSMutableArray *arrayBubbleWasIn;
 
 
 -(void) updateMe;
--(void) hit;
--(void)	rebound;
 -(void)	move;
 -(void) chooseTarget;
 -(void) chooseLining;
 -(void) takeDamage;
+-(void) checkCollisionWithFish;
+-(void) updateArray : (int) startingPoint;
 
 @end

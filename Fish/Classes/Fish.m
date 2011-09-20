@@ -27,8 +27,8 @@ float friction = .6;
         {
             acc = [[AccController alloc] init];
         }
-		XPos = width/2;
-		YPos = height/2;
+		XPos = width;
+		YPos = height;
         [self setFrame:CGRectMake(0, 0, 103, 87)];
         
         [self toggleTimer];

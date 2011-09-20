@@ -10,9 +10,11 @@
 #import "Fish.h"
 #import "Pollen.h"
 #import "DustMite.h"
+#import "AnimalFur.h"
+#import "DeathSplat.h"
 #import <stdlib.h>
 #import <math.h>
-#import "PreventerArray.h"
+#import "PreventerBubble.h"
 
 
 
@@ -22,6 +24,8 @@
 
 @synthesize XPos;
 @synthesize YPos;
+@synthesize targetX;
+@synthesize targetY;
 @synthesize speed;
 @synthesize randomNum;
 @synthesize direction;
@@ -31,6 +35,10 @@
 @synthesize health;
 @synthesize theLining;
 @synthesize aFish;
+@synthesize aTriggerArray;
+@synthesize index;
+@synthesize isAttacking;
+@synthesize arrayBubbleWasIn;
 
 //@synthesize timer;
 
@@ -41,48 +49,75 @@ float screen_height = 1002;
 
 
 -(void) updateMe{
-	[self move];
-
-}
-
--(void)hit{
-	self.hidden = TRUE;
-}
-
-
--(void)rebound{
-	direction = -direction;
+	[self move];	
+	[self checkCollisionWithFish];
 	
-	XPos = self.center.x + direction;
-	YPos = self.center.y + direction;
-	 
 }
+
+
 
 
 
 
 - (void) checkTargetReached {
 	//if the trigger has almost reached its target choose a new one
-	if ((int)XPos > (10 - targetX) && (int)XPos < (10 + targetX) && (int)YPos > (10 - targetY) && (int)YPos < (10 + targetY)) {
-		if(targetX > 618 || targetX < 150){
-			targetX = arc4random() % 368 + 250;
-			targetY = arc4random() % 604 + 250;			
+	if (XPos > (targetX - 5) && XPos < (targetX + 5) && YPos > (targetY - 5) && YPos < (targetY + 5)) {
+//		printf("Target Reached ------=- \n");
+//		printf("My X = %i, My Y = %i, Target X = %i, Target Y = %i \n", XPos, YPos , targetX,targetY);
+		if (isAttacking == TRUE) {
+			isAttacking = FALSE;
+//			printf("Trigger X = %i, Trigger Y = %i\n", XPos, YPos);
+			PreventerBubble *tempBubble = [arrayBubbleWasIn lastObject];
+			[tempBubble takeDamage];
+			
+			if (tempBubble.Health == 0) {
+				if ([arrayBubbleWasIn count] != 0) {
+					[tempBubble removeSelf];
+					[arrayBubbleWasIn removeLastObject];
+					[tempBubble release];
+					
+					if ([arrayBubbleWasIn count] == 0) {
+						UIAlertView *alertWithOkButto = alertWithOkButto = [[UIAlertView alloc] initWithTitle:@"LOSE"
+																									  message:@"Asthma Triggers have breached the Preventer Lining! \nYOU HAVE LOST!"
+																									 delegate:self 
+																							cancelButtonTitle:@"OK" 
+																							otherButtonTitles:nil];
+						
+						[alertWithOkButto show];
+						[alertWithOkButto release];
+					}
+				}	
+				
+
+			}
+			tempBubble = NULL;
+			arrayBubbleWasIn = NULL;
+			targetX = screen_width/2;
+			targetY = arc4random() % 500 + 150;
 		}
-		else {			
-			int chance = arc4random() % 40;
-			if (chance > 1) {
+		else {
+			
+			int chanceOfAttack = arc4random() % 40;
+//			printf("Chance of Attack = %i\n", chanceOfAttack);
+			if (chanceOfAttack > 20) {
 				self.chooseTarget;
+				
 			}
 			else {
+
 				self.chooseLining;
 			}
+			
 		}
-		
 	}
 	
 }
+
+
+
+
 - (void) checkBounds {
-  if (XPos < boundsTopAndLeft) {
+	if (XPos < boundsTopAndLeft) {
 		XPos = boundsTopAndLeft;
 	}
 	if(XPos > boundsRight){
@@ -94,32 +129,32 @@ float screen_height = 1002;
 	if (YPos > boundsBottom) {
 		YPos = boundsBottom;
 	}
-
+	
 }
 - (void) calculateFishAvoidance: (float) distance dyFish: (float) dyFish restingDistance: (float) restingDistance k: (float) k dxFish: (float) dxFish  {
-		//adds avoidance to the trigger if it is close to the fish.
-		  float ddx = 0;
-		float ddy = 0;
-		if(distance < restingDistance)
-		{
-			ddx = k*(distance-restingDistance)*(dxFish/distance);
-			ddy = k*(distance-restingDistance)*(dyFish/distance);
-		}		
-		//adds teh avoidance to the current position
-		XPos += ddx;
-		YPos += ddy;
-
+	//adds avoidance to the trigger if it is close to the fish.
+	float ddx = 0;
+	float ddy = 0;
+	if(distance < restingDistance)
+	{
+		ddx = k*(distance-restingDistance)*(dxFish/distance);
+		ddy = k*(distance-restingDistance)*(dyFish/distance);
+	}		
+	//adds teh avoidance to the current position
+	XPos += ddx;
+	YPos += ddy;
+	
 }
 -(void) move{
 	
 	float k = .05;					//strength of the avoidance spring
-    float restingDistance = 300;	//distance the spring starts to take effect
-    
+	float restingDistance = 300;	//distance the spring starts to take effect
 	
 	
-	[self checkTargetReached];	
 	
-
+	
+	
+	
 	//Works out the direction to head to get to the target
 	float dxTarget = XPos - targetX;
 	float dyTarget = YPos - targetY;	
@@ -131,8 +166,8 @@ float screen_height = 1002;
 	
 	
 	//works out the distance between the Fish and the trigger
-
-
+	
+	
 	if ([self isKindOfClass:[Pollen class]]) {	
 		float dxFish =  aFish.XPos - XPos;
 		float dyFish =  aFish.YPos - YPos;	
@@ -140,8 +175,8 @@ float screen_height = 1002;
 		[self calculateFishAvoidance: distance dyFish: dyFish restingDistance: restingDistance k: k dxFish: dxFish];
 	}
 	
-	[self checkBounds];
-
+//	[self checkBounds];
+	[self checkTargetReached];	
 	
 	
 	//draws the result to the screen
@@ -149,6 +184,7 @@ float screen_height = 1002;
 }
 
 -(void) chooseTarget{
+//	printf("Choosing Targert\n");
 	boundsBottom = 854;
 	boundsTopAndLeft = 150;
 	boundsRight = 618;
@@ -159,24 +195,22 @@ float screen_height = 1002;
 
 
 -(void) chooseLining{
-	
+//	printf("Choosing Lining\n");
 	boundsBottom = 1000;
 	boundsTopAndLeft = 0;
 	boundsRight = 768;
-	if ([self isKindOfClass:[DustMite class]]) {
-		
-	}
-	else {		
-		int chance = arc4random() % 20;
-		
-		if(chance >= 10){
-			targetX = arc4random() % 150 + 618;
-		}
-		else {
-			targetX = arc4random() % 150;
-		}
-		targetY = arc4random() % 1000;
-	}
+	
+	int randomIndex = arc4random() % 80;
+	
+	arrayBubbleWasIn = [theLining objectAtIndex:randomIndex];
+	PreventerBubble *tempBubble = [arrayBubbleWasIn lastObject];
+	
+	targetX = tempBubble.XPos;
+	targetY = tempBubble.YPos;
+//	printf("ATTACK!\n");
+	
+	isAttacking = TRUE;
+	
 }
 
 -(void) takeDamage{
@@ -184,6 +218,56 @@ float screen_height = 1002;
 	[self chooseTarget];
 }
 
+-(void) checkCollisionWithFish{
+	if(YPos > (aFish.YPos-43) && YPos < (aFish.YPos +43)){
+		if(XPos > (aFish.XPos-51) && XPos < (aFish.XPos +51))
+		{
+//			printf("Hit Fish - Reacting \n");
+			[aFish hit];
+			[self takeDamage];
+			if (self.health == 0) {
+				
+				
+				DeathSplat *aSplat = [[DeathSplat alloc] init: self.XPos : self.YPos ];
+				[self.superview addSubview:aSplat];
+				[self.superview sendSubviewToBack:aSplat];
+				[self removeFromSuperview];
+				//printf("Trigger Array count = %i \n" , [aTriggerArray count]);
+				
+				[aTriggerArray removeObjectAtIndex:self.index];
+				[self updateArray:self.index];
+				
+				
+				//calculate the score and update the score label	
+				//score = score + 10;		
+				//NSString *theScore = [NSString stringWithFormat:@"Score: %i",score];			  
+				//[scoreLabel setText:theScore];
+				//[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+			}
+			
+			//Temp Win Condition
+			//printf("HIT! numMites = %d\n", [aTriggerArray count]);
+			if ([aTriggerArray count]  < 1) {
+				UIAlertView *alertWithOkButto = alertWithOkButto = [[UIAlertView alloc] initWithTitle:@"WIN"
+																							  message:@"YOU HAVE WON! \n YOU'RE THE KING" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+				
+				[alertWithOkButto show];
+				[alertWithOkButto release];
+			}
+		}
+		
+	}
+	
+	
+}
 
+-(void) updateArray : (int) startingPoint{
+	//printf("Updating Array, Starting point = %i, Array Count = %i\n", startingPoint, [aTriggerArray count]);
+	for (int i = startingPoint + 1; i < ([aTriggerArray count]); i++) {
+		//printf("Time Around %i, \n" ,i);
+		Sprite *aSprite = [aTriggerArray objectAtIndex:i];
+		aSprite.index -= 1;
+	}
+}
 
 @end

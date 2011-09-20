@@ -15,7 +15,7 @@
 
 @property (nonatomic, retain) NSMutableArray *mySpits;
 
-- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish;
+-(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray;
 
 -(void) chooseTarget;
 -(void)spitProjectile;

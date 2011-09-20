@@ -65,10 +65,10 @@
 - (void)viewDidLoad {
 	
 	//Set the custom font for this views buttons
-	[startButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[optionsButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[asthmapediaButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];	
-	[asthmaWaikatoLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+	[startButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[optionsButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[asthmapediaButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];	
+	[asthmaWaikatoLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
 	
 	
 	

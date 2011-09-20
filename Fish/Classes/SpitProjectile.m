@@ -35,9 +35,9 @@
     return self;
 }
 
--(void) moveSpit : (NSMutableArray *) passedArray{
-	
-	if ((int)XPos > (5 - targetX) && (int)XPos < (5 + targetX) && (int)YPos > (5 - targetY) && (int)YPos < (5 + targetY)) {
+-(void) moveSpit : (NSMutableArray *) passedArray{	
+	if (XPos > (targetX -5) && XPos < (targetX +  5) && YPos > (targetY - 5) && YPos < (targetY + 5)) {
+		
 		[self removeFromSuperview];
 		[aFish hit];
 		[passedArray removeObjectAtIndex:0];

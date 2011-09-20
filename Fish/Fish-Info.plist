@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>fish.png</string>
+	<string>sailor_Base.png</string>
 	<key>CFBundleIdentifier</key>
 	<string>nz.ac.waikato.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -35,6 +35,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Suplexmentary Comic NC.ttf</string>
+		<string>AppleCasual.dfont</string>
 	</array>
 </dict>
 </plist>

@@ -94,10 +94,10 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	[soundsButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[musicButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[resetButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
-	[creditsButton.titleLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+	[soundsButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[musicButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[resetButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
+	[creditsButton.titleLabel setFont:[UIFont fontWithName:@"AppleCasual" size:36]];
     [super viewDidLoad];
 }
 

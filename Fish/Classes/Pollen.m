@@ -16,7 +16,7 @@
 float pollen_radius = 30;
 
 
-- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish{
+-(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray{
     self = [super initWithImage:[UIImage imageNamed:@"pollen_base.png"]];
     if(self){
 		health = 1;
@@ -24,6 +24,11 @@ float pollen_radius = 30;
 		YPos = randomY;
 		speed = 5;
 		aFish = passedFish;
+		index = myIndex;
+		isAttacking = FALSE;
+		theLining = passedPreventerArray;
+		aTriggerArray = passedTriggerArray;
+		
         [self setFrame:CGRectMake(XPos, YPos, 51, 55)];
 		
 		
