@@ -11,43 +11,44 @@
 
 
 @interface Sprite : UIImageView {
-	float XSpeed;
-	float YSpeed;
+	//Sprites Position on Screen	
 	int XPos;
 	int YPos;
-	int randomNum;
+	
+	//Where Sprite Is going to go on screen
 	int targetX;
 	int targetY;
-	float direction;
-	float boundsTopAndLeft;
-	float boundsRight;
-	float boundsBottom;
+	
+	//Other Properties
 	int health;
+	float direction;
 	float speed;
+	
+	//Where this Sprite is in the Global Update Array
 	int index;
 	
+	//Whether the current Sprite is attacking the lining
 	bool isAttacking;
 	
+	//Pointers to Global Objects
 	Fish *aFish;
 	NSMutableArray *aTriggerArray;
 	NSMutableArray *theLining;
 	NSMutableArray *arrayBubbleWasIn;
 }
 
-@property float XSpeed;
-@property float YSpeed;
-
+/*
+ *	Declaring Variables as Properties so they can be Accessed outside Of Sprite Class
+ */
 @property int XPos;
 @property int YPos;
+
 @property int targetX;
 @property int targetY;
-@property float speed;
-@property float boundsTopAndLeft;
-@property float boundsRight;
-@property float boundsBottom;
-@property int randomNum;
-@property float direction;
+
 @property int health;
+@property float direction;
+@property float speed;
 @property int index;
 @property bool isAttacking;
 
@@ -58,6 +59,9 @@
 @property (nonatomic, retain)NSMutableArray *arrayBubbleWasIn;
 
 
+/*
+ * Methods For The Sprite Class
+ */
 -(void) updateMe;
 -(void)	move;
 -(void) chooseTarget;

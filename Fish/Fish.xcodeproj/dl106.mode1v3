@@ -282,14 +282,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
+									<integer>30</integer>
 									<integer>24</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 158}, {318, 823}}</string>
+							<string>{{0, 294}, {318, 823}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -326,7 +326,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Sprite.m</string>
+								<string>AnimalFur.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -334,11 +334,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Sprite.m</string>
+										<string>AnimalFur.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B20868FF1429771C0060ACA8</string>
+										<string>B20869181429817C0060ACA8</string>
 										<key>history</key>
 										<array>
 											<string>B277271914037571004751A1</string>
@@ -401,13 +401,13 @@
 											<string>B20868DD142975610060ACA8</string>
 											<string>B20868DE142975610060ACA8</string>
 											<string>B20868DF142975610060ACA8</string>
-											<string>B20868E0142975610060ACA8</string>
 											<string>B20868E9142975C30060ACA8</string>
 											<string>B20868EB142975C30060ACA8</string>
 											<string>B20868EC142975C30060ACA8</string>
-											<string>B20868F71429766C0060ACA8</string>
 											<string>B20868FD1429771C0060ACA8</string>
-											<string>B20868FE1429771C0060ACA8</string>
+											<string>B2086914142981200060ACA8</string>
+											<string>B2086915142981200060ACA8</string>
+											<string>B2086916142981200060ACA8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -607,8 +607,8 @@
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>B29BC13E1402256900A136FA</string>
-		<string>/Users/dl106/Desktop/NewFish/Fish/Fish.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/dl106/Desktop/NewFish/Fish/Fish.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1680 882 0 0 1680 1028 </string>
@@ -634,7 +634,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DustMite.m</string>
+								<string>AnimalFur.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

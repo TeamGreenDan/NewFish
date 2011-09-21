@@ -31,10 +31,7 @@ float animalFur_radius = 30;
 		theLining = passedPreventerArray;
 		aTriggerArray = passedTriggerArray;
 		isAttacking = FALSE;
-        [self setFrame:CGRectMake(XPos, YPos, 52, 63)];		
-		boundsBottom = 854;
-		boundsTopAndLeft = 150;
-		boundsRight = 618;
+        [self setFrame:CGRectMake(XPos, YPos, 52, 63)];	
 		
 		mySpits = [[NSMutableArray alloc]init];
     }
@@ -97,15 +94,11 @@ float animalFur_radius = 30;
 					[tempSpit removeSelf];
 				}
 				
-				[aTriggerArray removeObjectAtIndex:self.index];
-				[self updateArray:self.index];
+				@synchronized(self){
+					[aTriggerArray removeObjectAtIndex:self.index];
+					[self updateArray:self.index];
+				}
 				
-				
-				//calculate the score and update the score label	
-				//score = score + 10;		
-				//NSString *theScore = [NSString stringWithFormat:@"Score: %i",score];			  
-				//[scoreLabel setText:theScore];
-				//[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
 			}
 			else {
 				[self chooseTarget];
