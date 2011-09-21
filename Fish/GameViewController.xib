@@ -168,7 +168,7 @@
 					<object class="IBUILabel" id="733069915">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{528, 20}, {270, 84}}</string>
+						<string key="NSFrame">{{656, -16}, {270, 84}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -326,13 +326,13 @@
 						<reference key="object" ref="766721923"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="733069915"/>
 							<reference ref="380075117"/>
 							<reference ref="345724712"/>
 							<reference ref="695397231"/>
 							<reference ref="788867841"/>
 							<reference ref="748295120"/>
 							<reference ref="1055989717"/>
+							<reference ref="733069915"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -402,7 +402,7 @@
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABEBkAAwlQAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABEBAAAwswAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">

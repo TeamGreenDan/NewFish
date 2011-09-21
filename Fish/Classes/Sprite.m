@@ -40,11 +40,9 @@
 @synthesize isAttacking;
 @synthesize arrayBubbleWasIn;
 
-//@synthesize timer;
-
 float screen_width = 768;
 float screen_height = 1002;
-
+int theScore = 0;
 
 
 
@@ -62,16 +60,17 @@ float screen_height = 1002;
 - (void) checkTargetReached {
 	//if the trigger has almost reached its target choose a new one
 	if (XPos > (targetX - 5) && XPos < (targetX + 5) && YPos > (targetY - 5) && YPos < (targetY + 5)) {
-//		printf("Target Reached ------=- \n");
-//		printf("My X = %i, My Y = %i, Target X = %i, Target Y = %i \n", XPos, YPos , targetX,targetY);
+
 		if (isAttacking == TRUE) {
 			isAttacking = FALSE;
-//			printf("Trigger X = %i, Trigger Y = %i\n", XPos, YPos);
+			
 			PreventerBubble *tempBubble = [arrayBubbleWasIn lastObject];
 			[tempBubble takeDamage];
 			
 			if (tempBubble.Health == 0) {
+				
 				if ([arrayBubbleWasIn count] != 0) {
+					
 					[tempBubble removeSelf];
 					[arrayBubbleWasIn removeLastObject];
 					[tempBubble release];
@@ -150,11 +149,6 @@ float screen_height = 1002;
 	float k = .05;					//strength of the avoidance spring
 	float restingDistance = 300;	//distance the spring starts to take effect
 	
-	
-	
-	
-	
-	
 	//Works out the direction to head to get to the target
 	float dxTarget = XPos - targetX;
 	float dyTarget = YPos - targetY;	
@@ -205,7 +199,16 @@ float screen_height = 1002;
 	arrayBubbleWasIn = [theLining objectAtIndex:randomIndex];
 	PreventerBubble *tempBubble = [arrayBubbleWasIn lastObject];
 	
-	targetX = tempBubble.XPos;
+	
+	if (tempBubble.XPos < (screen_width/2)) {
+		targetX = tempBubble.XPos + 45;
+	}
+	else {
+		targetX = tempBubble.XPos;
+	}
+
+	
+	
 	targetY = tempBubble.YPos;
 //	printf("ATTACK!\n");
 	
@@ -215,7 +218,6 @@ float screen_height = 1002;
 
 -(void) takeDamage{
 	health--;
-	[self chooseTarget];
 }
 
 -(void) checkCollisionWithFish{
@@ -225,7 +227,10 @@ float screen_height = 1002;
 //			printf("Hit Fish - Reacting \n");
 			[aFish hit];
 			[self takeDamage];
+			
 			if (self.health == 0) {
+				//printf("Score = %i", score);
+				theScore += 10;
 				
 				
 				DeathSplat *aSplat = [[DeathSplat alloc] init: self.XPos : self.YPos ];
@@ -234,16 +239,17 @@ float screen_height = 1002;
 				[self removeFromSuperview];
 				//printf("Trigger Array count = %i \n" , [aTriggerArray count]);
 				
-				[aTriggerArray removeObjectAtIndex:self.index];
-				[self updateArray:self.index];
+				@synchronized(self){
+					[aTriggerArray removeObjectAtIndex:self.index];
+					[self updateArray:self.index];
+				}
 				
-				
-				//calculate the score and update the score label	
-				//score = score + 10;		
-				//NSString *theScore = [NSString stringWithFormat:@"Score: %i",score];			  
-				//[scoreLabel setText:theScore];
-				//[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+
 			}
+			else {
+				[self chooseTarget];
+			}
+
 			
 			//Temp Win Condition
 			//printf("HIT! numMites = %d\n", [aTriggerArray count]);
@@ -266,8 +272,14 @@ float screen_height = 1002;
 	for (int i = startingPoint + 1; i < ([aTriggerArray count]); i++) {
 		//printf("Time Around %i, \n" ,i);
 		Sprite *aSprite = [aTriggerArray objectAtIndex:i];
-		aSprite.index -= 1;
+		
+			aSprite.index -= 1;
+		
 	}
+}
+
+-(int) theScore{
+	return theScore;
 }
 
 @end

@@ -142,7 +142,7 @@ int score = 0;
 		for (int i = 0; i < 20; i++) {
 			if (spawnSwitch1 == FALSE ) {
 				if (spawnSwitch2 == FALSE) {
-					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray];
+					AnimalFur *theFur = [[AnimalFur alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray : score];
 					[self.view addSubview:theFur];
 					[self.view sendSubviewToBack:theFur];
 					[triggersArray insertObject:theFur atIndex:i];
@@ -150,7 +150,7 @@ int score = 0;
 					spawnSwitch2 = TRUE;
 				}
 				else {
-					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray];
+					Pollen *aPollen = [[Pollen alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray : score];
 					[self.view addSubview:aPollen];
 					[self.view sendSubviewToBack:aPollen];
 					[triggersArray insertObject:aPollen atIndex:i];
@@ -159,7 +159,7 @@ int score = 0;
 				spawnSwitch1 = TRUE;
 			}
 			else {
-				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray];			
+				DustMite *theMite = [[DustMite alloc] init:(300 + (20*i)):200 : theFish : preventerArray : i : triggersArray : score];			
 				[self.view addSubview:theMite];
 				[self.view sendSubviewToBack:theMite];
 				[triggersArray insertObject:theMite atIndex:i];
@@ -196,8 +196,15 @@ int score = 0;
 	int i = ([triggersArray count]-1);
 	for (i; i >= 0; i--) {
 		Sprite *updateTrigger = [triggersArray objectAtIndex:i];
+		score = [updateTrigger theScore];
 		[updateTrigger updateMe];
 	}
+	//calculate the score and update the score label	
+		
+	NSString *theScore = [NSString stringWithFormat:@"%i",score];			  
+	[scoreLabel setText:theScore];
+	[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
+	
 	[self.view sendSubviewToBack:backgroundImage];
 }
 

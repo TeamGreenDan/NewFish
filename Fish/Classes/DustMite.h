@@ -13,7 +13,7 @@
 
 }
 
--(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray;
+-(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray : (int) passedScore;
 
 
 @end

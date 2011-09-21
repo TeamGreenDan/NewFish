@@ -10,9 +10,14 @@
 
 
 @interface SpitProjectile : Sprite {
+	NSMutableArray *arraySpitIsIn;
 
 }
-- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish;
--(void) moveSpit : (NSMutableArray *) passedArray;
+
+@property (nonatomic, retain)NSMutableArray *arraySpitIsIn;
+
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish : (NSMutableArray *) passedArray;
+-(void) moveSpit;
+-(void) removeSelf;
 
 @end

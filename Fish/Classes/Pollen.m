@@ -16,7 +16,7 @@
 float pollen_radius = 30;
 
 
--(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray{
+-(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray : (int) passedScore{
     self = [super initWithImage:[UIImage imageNamed:@"pollen_base.png"]];
     if(self){
 		health = 1;

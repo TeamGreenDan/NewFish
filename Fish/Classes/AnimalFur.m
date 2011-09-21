@@ -18,7 +18,7 @@
 float animalFur_radius = 30;
 
 
--(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray{
+-(id) init:(int)randomX :(int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray : (int) passedScore{
     self = [super initWithImage:[UIImage imageNamed:@"animalFur_base.png"]];
     if(self){
 		self.chooseTarget;
@@ -46,7 +46,7 @@ float animalFur_radius = 30;
 	int i = ([mySpits count]-1);
 	for (i; i >= 0; i--) {
 		SpitProjectile *updateSpit = [mySpits objectAtIndex:i];
-		[updateSpit moveSpit : mySpits];
+		[updateSpit moveSpit];
 		//printf("happend\n");
 	}
 	[self checkCollisionWithFish];
@@ -59,7 +59,7 @@ float animalFur_radius = 30;
  */
 -(void)chooseTarget{
 	int chance = arc4random() % 20;
-	if (chance < 3) {
+	if (chance < 10) {
 		[self spitProjectile];
 	}
 
@@ -69,7 +69,7 @@ float animalFur_radius = 30;
 }
 
 -(void)spitProjectile{
-	SpitProjectile *theSpit = [[SpitProjectile alloc] init: XPos : YPos : aFish];
+	SpitProjectile *theSpit = [[SpitProjectile alloc] init: XPos : YPos : aFish : mySpits];
 	[mySpits addObject: theSpit];
 	
 	[self.superview addSubview:theSpit];
@@ -84,15 +84,18 @@ float animalFur_radius = 30;
 			[self takeDamage];
 			if (self.health == 0) {
 				
+
 				
 				DeathSplat *aSplat = [[DeathSplat alloc] init: self.XPos : self.YPos ];
 				[self.superview addSubview:aSplat];
 				[self.superview sendSubviewToBack:aSplat];
 				[self removeFromSuperview];
-				//printf("Trigger Array count = %i \n" , [aTriggerArray count]);
-				//for(int i = [mySpits count]; i < 0; i--) {
-				//	[mySpits objectAtIndex:i]
-				//}
+				
+				for(int i = [mySpits count]-1; i >= 0; i--) {
+					
+					SpitProjectile *tempSpit = [mySpits objectAtIndex:i];
+					[tempSpit removeSelf];
+				}
 				
 				[aTriggerArray removeObjectAtIndex:self.index];
 				[self updateArray:self.index];
@@ -104,6 +107,10 @@ float animalFur_radius = 30;
 				//[scoreLabel setText:theScore];
 				//[scoreLabel setFont:[UIFont fontWithName:@"Suplexmentary Comic NC" size:36]];
 			}
+			else {
+				[self chooseTarget];
+			}
+
 			
 			//Temp Win Condition
 			//printf("HIT! numMites = %d\n", [aTriggerArray count]);

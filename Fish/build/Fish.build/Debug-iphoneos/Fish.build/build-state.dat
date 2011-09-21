@@ -3,71 +3,6 @@ v7
 r0
 t337474895.545325
 cCheck dependencies
-cCpResource build/Debug-iphoneos/Fish.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/Info.plist Fish-Info.plist
-cCompileXIB /Users/dl106/Desktop/NewFish/Fish/MainWindow.xib
-cCompileXIB /Users/dl106/Desktop/NewFish/Fish/FishViewController.xib
-cCompileXIB /Users/dl106/Desktop/NewFish/Fish/Classes/AsthmapediaViewController.xib
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fish.png fish.png
-cCompileXIB /Users/dl106/Desktop/NewFish/Fish/GameViewController.xib
-cCompileXIB /Users/dl106/Desktop/NewFish/Fish/Classes/OptionsViewController.xib
-cCompileXIB /Users/dl106/Desktop/NewFish/Fish/Classes/CreditsViewController.xib
-cCompileXIB /Users/dl106/Desktop/NewFish/Fish/Classes/LevelSelectViewController.xib
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmaWaikatoButtonPress.png asthmaWaikatoButtonPress.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/backButtonPress.png backButtonPress.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/menuButtonPress.png menuButtonPress.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pauseButtonPress.png pauseButtonPress.png
-cCpResource "build/Debug-iphoneos/Fish.app/Suplexmentary Comic NC.ttf" "Suplexmentary Comic NC.ttf"
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/arrowGraphic.png arrowGraphic.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmaWaikatoButton.png asthmaWaikatoButton.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/backButton.png backButton.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/menuButton.png menuButton.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pauseButton.png pauseButton.png
-cCpResource build/Debug-iphoneos/Fish.app/asthmapedia_placeholder.jpg asthmapedia_placeholder.jpg
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaAnimalFur.png asthmapediaAnimalFur.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaCold.png asthmapediaCold.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaDustMite.png asthmapediaDustMite.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaFluVirus.png asthmapediaFluVirus.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaPollen.png asthmapediaPollen.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaSmoke.png asthmapediaSmoke.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/logos.png logos.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmaWaikatoLogo.png asthmaWaikatoLogo.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dustMite.png dustMite.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/animalFur.png animalFur.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fluVirus.png fluVirus.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pollen.png pollen.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/smoke.png smoke.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/preventerBubbleGreen.png preventerBubbleGreen.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/preventerBubbleRed.png preventerBubbleRed.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelScoreStars.png levelScoreStars.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelSelectBase.png levelSelectBase.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelSelectBaseOver.png levelSelectBaseOver.png
-cCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelSelectLockedGrey.png levelSelectLockedGrey.png
-cProcessPCH /var/folders/2X/2XWXbhY0HayA4NdwuGNXi-6scts/-Caches-/com.apple.Xcode.305701790/SharedPrecompiledHeaders/Fish_Prefix-alcmdwvknougubfuueykjewgcjlt/Fish_Prefix.pch.gch Fish_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/main.o /Users/dl106/Desktop/NewFish/Fish/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/FishAppDelegate.o /Users/dl106/Desktop/NewFish/Fish/Classes/FishAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/FishViewController.o /Users/dl106/Desktop/NewFish/Fish/Classes/FishViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/AsthmapediaViewController.o /Users/dl106/Desktop/NewFish/Fish/Classes/AsthmapediaViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/Fish.o /Users/dl106/Desktop/NewFish/Fish/Classes/Fish.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/AccController.o /Users/dl106/Desktop/NewFish/Fish/Classes/AccController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/DustMite.o /Users/dl106/Desktop/NewFish/Fish/Classes/DustMite.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/GameViewController.o /Users/dl106/Desktop/NewFish/Fish/Classes/GameViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/AnimalFur.o /Users/dl106/Desktop/NewFish/Fish/Classes/AnimalFur.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/OptionsViewController.o /Users/dl106/Desktop/NewFish/Fish/Classes/OptionsViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/CreditsViewController.o /Users/dl106/Desktop/NewFish/Fish/Classes/CreditsViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/LevelSelectViewController.o /Users/dl106/Desktop/NewFish/Fish/Classes/LevelSelectViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/ScrollingController.o /Users/dl106/Desktop/NewFish/Fish/Classes/ScrollingController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerArray.o /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerArray.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerLining.o /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerLining.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/Sprite.o /Users/dl106/Desktop/NewFish/Fish/Classes/Sprite.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/SpitProjectile.o /Users/dl106/Desktop/NewFish/Fish/Classes/SpitProjectile.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/Pollen.o /Users/dl106/Desktop/NewFish/Fish/Classes/Pollen.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/Fish normal armv7
-cGenerateDSYMFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app.dSYM /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/Fish
-cProcessProductPackaging "/Users/dl106/Library/MobileDevice/Provisioning Profiles/199CA357-5BFB-4C72-B897-77F6A4ED03E0.mobileprovision" /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/embedded.mobileprovision
-cTouch /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish.xcent
-cCodeSign /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app
 
 N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
 c000000004D7401890000000000000110
@@ -1386,117 +1321,135 @@ i"PreventerArray.h"
 i"PreventerLining.h"
 i"DustMite.h"
 
+N/Users/dl106/Desktop/NewFish/Fish/AppleCasual.dfont
+c000000004CB3F8F2000000000000E070
+t1286863090
+s57456
+
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AccController.h
-c000000004E682FEA00000000000000E6
-t1315450858
+c000000004E76652A00000000000000E6
+t1316381994
 s230
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AccController.m
-c000000004E6870E6000000000000031A
-t1315467494
+c000000004E76652A000000000000031A
+t1316381994
 s794
 i"AccController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AnimalFur.h
-c000000004E697B66000000000000011C
-t1315535718
-s284
+c000000004E793A9E00000000000001F8
+t1316567710
+s504
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AnimalFur.m
-c000000004E697D0B0000000000000368
-t1315536139
-s872
+c000000004E793DDE0000000000000C02
+t1316568542
+s3074
 i"AnimalFur.h"
 i"SpitProjectile.h"
+i"DeathSplat.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AsthmapediaViewController.h
-c000000004E682FEA00000000000001C0
-t1315450858
+c000000004E76652A00000000000001C0
+t1316381994
 s448
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AsthmapediaViewController.m
-c000000004E682FEA0000000000000D42
-t1315450858
-s3394
+c000000004E77065A0000000000000D4B
+t1316423258
+s3403
 i"AsthmapediaViewController.h"
 i"FishViewController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AsthmapediaViewController.xib
-c000000004E682FEA00000000000055F1
-t1315450858
-s22001
+c000000004E7705E700000000000055F2
+t1316423143
+s22002
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/CreditsViewController.h
-c000000004E682FEA00000000000001BB
-t1315450858
+c000000004E76652A00000000000001BB
+t1316381994
 s443
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/CreditsViewController.m
-c000000004E682FEA0000000000000C7C
-t1315450858
+c000000004E76652A0000000000000C7C
+t1316381994
 s3196
 i"CreditsViewController.h"
 i"OptionsViewController.h"
 i"ScrollingController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/CreditsViewController.xib
-c000000004E682FEA000000000000552F
-t1315450858
+c000000004E76652A000000000000552F
+t1316381994
 s21807
 
+N/Users/dl106/Desktop/NewFish/Fish/Classes/DeathSplat.h
+c000000004E76A53E000000000000013A
+t1316398398
+s314
+i"Sprite.h"
+
+N/Users/dl106/Desktop/NewFish/Fish/Classes/DeathSplat.m
+c000000004E76A5D200000000000002FF
+t1316398546
+s767
+i"DeathSplat.h"
+
 N/Users/dl106/Desktop/NewFish/Fish/Classes/DustMite.h
-c000000004E68348800000000000000EB
-t1315452040
-s235
+c000000004E793D660000000000000177
+t1316568422
+s375
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/DustMite.m
-c000000004E686AE6000000000000020A
-t1315465958
-s522
+c000000004E793DDE0000000000000325
+t1316568542
+s805
 i"DustMite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Fish.h
-c000000004E682FEA0000000000000156
-t1315450858
+c000000004E76652A0000000000000156
+t1316381994
 s342
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Fish.m
-c000000004E682FEA000000000000088A
-t1315450858
-s2186
+c000000004E792AE2000000000000087C
+t1316563682
+s2172
 i"Fish.h"
 i"AccController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/FishAppDelegate.h
-c000000004E682FEA00000000000001CE
-t1315450858
+c000000004E76652A00000000000001CE
+t1316381994
 s462
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/FishAppDelegate.m
-c000000004E682FEA00000000000007FD
-t1315450858
+c000000004E76652A00000000000007FD
+t1316381994
 s2045
 i"FishAppDelegate.h"
 i"FishViewController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/FishViewController.h
-c000000004E682FEA00000000000001FD
-t1315450858
+c000000004E76652A00000000000001FD
+t1316381994
 s509
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/FishViewController.m
-c000000004E682FEA0000000000000A78
-t1315450858
-s2680
+c000000004E77E1AE0000000000000A59
+t1316479406
+s2649
 i"FishViewController.h"
 i"LevelSelectViewController.h"
 i"GameViewController.h"
@@ -1504,74 +1457,76 @@ i"AsthmapediaViewController.h"
 i"OptionsViewController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/GameViewController.h
-c000000004E68687D000000000000034D
-t1315465341
-s845
+c000000004E7833210000000000000420
+t1316500257
+s1056
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/GameViewController.m
-c000000004E6D34820000000000003E6D
-t1315779714
-s15981
+c000000004E793EEB0000000000003F2E
+t1316568811
+s16174
 i"GameViewController.h"
 i"FishViewController.h"
+i"LevelSelectViewController.h"
 i"Fish.h"
 i"DustMite.h"
 i"AnimalFur.h"
 i"Pollen.h"
-i"PreventerLining.h"
-i"PreventerArray.h"
+i"DeathSplat.h"
 i<stdlib.h>
 i<UIKit/UIKit.h>
+i"PreventerBubble.h"
+i"PreventerWall.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/LevelSelectViewController.h
-c000000004E682FEA000000000000011A
-t1315450858
+c000000004E76652A000000000000011A
+t1316381994
 s282
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/LevelSelectViewController.m
-c000000004E682FEA00000000000006D4
-t1315450858
+c000000004E76652A00000000000006D4
+t1316381994
 s1748
 i"LevelSelectViewController.h"
 i"FishViewController.h"
 i"GameViewController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/LevelSelectViewController.xib
-c000000004E686E7F0000000000008E39
-t1315466879
+c000000004E76652A0000000000008E39
+t1316381994
 s36409
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/OptionsViewController.h
-c000000004E682FEA00000000000001F0
-t1315450858
+c000000004E76652A00000000000001F0
+t1316381994
 s496
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/OptionsViewController.m
-c000000004E682FEA0000000000000CBD
-t1315450858
-s3261
+c000000004E77E1AE0000000000000C91
+t1316479406
+s3217
 i"OptionsViewController.h"
 i"FishViewController.h"
 i"CreditsViewController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/OptionsViewController.xib
-c000000004E682FEA0000000000007CA7
-t1315450858
+c000000004E76652A0000000000007CA7
+t1316381994
 s31911
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Pollen.h
-c000000004E697D0B00000000000000ED
-t1315536139
-s237
+c000000004E793A9F0000000000000179
+t1316567711
+s377
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Pollen.m
-c000000004E697E1E0000000000000206
-t1315536414
-s518
+c000000004E793DDE000000000000031F
+t1316568542
+s799
 i"Pollen.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerArray.h
@@ -1588,6 +1543,18 @@ i"PreventerArray.h"
 i"PreventerLining.h"
 i"DustMite.h"
 
+N/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerBubble.h
+c000000004E792EA6000000000000019E
+t1316564646
+s414
+i<UIKit/UIKit.h>
+
+N/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerBubble.m
+c000000004E792EA6000000000000044E
+t1316564646
+s1102
+i"PreventerBubble.h"
+
 N/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerLining.h
 c000000004E682FEA000000000000018B
 t1315450858
@@ -1600,77 +1567,106 @@ t1315450858
 s905
 i"PreventerLining.h"
 
+N/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerWall.h
+c000000004E7835DE000000000000010B
+t1316500958
+s267
+i<Foundation/Foundation.h>
+
+N/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerWall.m
+c000000004E79325700000000000008C7
+t1316565591
+s2247
+i"PreventerWall.h"
+i"PreventerBubble.h"
+
 N/Users/dl106/Desktop/NewFish/Fish/Classes/ScrollingController.h
-c000000004E682FEA00000000000000DF
-t1315450858
+c000000004E76652A00000000000000DF
+t1316381994
 s223
 i<Foundation/Foundation.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/ScrollingController.m
-c000000004E682FEA00000000000004A8
-t1315450858
+c000000004E76652A00000000000004A8
+t1316381994
 s1192
 i"ScrollingController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/SpitProjectile.h
-c000000004E68776F00000000000000F7
-t1315469167
-s247
+c000000004E7935DD00000000000001B2
+t1316566493
+s434
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/SpitProjectile.m
-c000000004E6878C40000000000000358
-t1315469508
-s856
+c000000004E793755000000000000054E
+t1316566869
+s1358
 i"SpitProjectile.h"
+i<math.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Sprite.h
-c000000004E68698C0000000000000251
-t1315465612
-s593
+c000000004E793E80000000000000054E
+t1316568704
+s1358
 i<UIKit/UIKit.h>
+i"Fish.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Sprite.m
-c000000004E6D3DB200000000000008FE
-t1315782066
-s2302
+c000000004E793E8000000000000018A8
+t1316568704
+s6312
 i"Sprite.h"
 i"Fish.h"
 i"Pollen.h"
+i"DustMite.h"
+i"AnimalFur.h"
+i"DeathSplat.h"
 i<stdlib.h>
 i<math.h>
+i"PreventerBubble.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/FishViewController.xib
-c000000004E682FEA00000000000087AC
-t1315450858
-s34732
+c000000004E769E3500000000000087E5
+t1316396597
+s34789
 
 N/Users/dl106/Desktop/NewFish/Fish/Fish_Prefix.pch
-c000000004E682FEA00000000000000B1
-t1315450858
+c000000004E76652A00000000000000B1
+t1316381994
 s177
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/GameViewController.xib
-c000000004E682FEA0000000000007C26
-t1315450858
-s31782
+c000000004E793EED0000000000008D9E
+t1316568813
+s36254
 
 N/Users/dl106/Desktop/NewFish/Fish/MainWindow.xib
-c000000004E682FEA0000000000004CEB
-t1315450858
+c000000004E76652A0000000000004CEB
+t1316381994
 s19691
 
 N/Users/dl106/Desktop/NewFish/Fish/Suplexmentary Comic NC.ttf
-c000000004E682FEA000000000001CEB4
-t1315450858
+c000000004E76652A000000000001CEB4
+t1316381994
 s118452
+
+N/Users/dl106/Desktop/NewFish/Fish/TitleImagePholder_NotTransparent.png
+c000000004E769DF90000000000013B76
+t1316396537
+s80758
 
 N/Users/dl106/Desktop/NewFish/Fish/animalFur.png
 c000000004E682FEA0000000000001CCF
 t1315450858
 s7375
+
+N/Users/dl106/Desktop/NewFish/Fish/animalFur_base.png
+c000000004E7162440000000000001A4F
+t1316053572
+s6735
 
 N/Users/dl106/Desktop/NewFish/Fish/animal_fur.jpg
 c000000004E5AE06200000000000053DD
@@ -1678,54 +1674,54 @@ t1314578530
 s21469
 
 N/Users/dl106/Desktop/NewFish/Fish/arrowGraphic.png
-c000000004E682FEA0000000000000C89
-t1315450858
+c000000004E76652A0000000000000C89
+t1316381994
 s3209
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmaWaikatoButton.png
-c000000004E682FEA00000000000022C3
-t1315450858
+c000000004E76652A00000000000022C3
+t1316381994
 s8899
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmaWaikatoButtonPress.png
-c000000004E682FEA0000000000001F2F
-t1315450858
+c000000004E76652A0000000000001F2F
+t1316381994
 s7983
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmaWaikatoLogo.png
-c000000004E682FEA000000000002EAAD
-t1315450858
+c000000004E76652A000000000002EAAD
+t1316381994
 s191149
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmapediaAnimalFur.png
-c000000004E682FEA000000000000CE20
-t1315450858
-s52768
+c000000004E77DE1D000000000000D961
+t1316478493
+s55649
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmapediaCold.png
-c000000004E682FEA000000000000C671
-t1315450858
-s50801
+c000000004E77DC1A000000000000D0E8
+t1316477978
+s53480
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmapediaDustMite.png
-c000000004E682FEA000000000000C9AB
-t1315450858
-s51627
+c000000004E77DC28000000000000CAA3
+t1316477992
+s51875
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmapediaFluVirus.png
-c000000004E682FEA000000000000BAE3
-t1315450858
-s47843
+c000000004E77DE2C000000000000C02C
+t1316478508
+s49196
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmapediaPollen.png
-c000000004E682FEA000000000000D6E1
-t1315450858
-s55009
+c000000004E77DC62000000000000D0E6
+t1316478050
+s53478
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmapediaSmoke.png
-c000000004E682FEA000000000000B440
-t1315450858
-s46144
+c000000004E77DC6B000000000000A4AA
+t1316478059
+s42154
 
 N/Users/dl106/Desktop/NewFish/Fish/asthmapedia_placeholder.jpg
 c000000004E682FEA00000000000153CF
@@ -1733,117 +1729,134 @@ t1315450858
 s86991
 
 N/Users/dl106/Desktop/NewFish/Fish/backButton.png
-c000000004E682FEA0000000000002423
-t1315450858
+c000000004E76652A0000000000002423
+t1316381994
 s9251
 
 N/Users/dl106/Desktop/NewFish/Fish/backButtonPress.png
-c000000004E682FEA00000000000020A7
-t1315450858
+c000000004E76652A00000000000020A7
+t1316381994
 s8359
 
+N/Users/dl106/Desktop/NewFish/Fish/background.png
+c000000004E716453000000000000632C
+t1316054099
+s25388
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app
-t1315782095
+t1316381994
 s1870
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app.dSYM
-t1315782067
+t1316381994
 s102
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/AppleCasual.dfont
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/AsthmapediaViewController.nib
-t1315450858
+t1316381994
 s3353
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/CreditsViewController.nib
-t1315450858
+t1316381994
 s3353
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/Fish
-t1315782066
+t1316381994
 s80816
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/FishViewController.nib
-t1315450858
+t1316381994
 s5539
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/GameViewController.nib
-t1315450858
+t1316381994
 s5088
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/Info.plist
-t1315450858
+t1316381994
 s1014
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/LevelSelectViewController.nib
-t1315467242
+t1316381994
 s5826
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/MainWindow.nib
-t1315450858
+t1316381994
 s1676
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/OptionsViewController.nib
-t1315450858
+t1316381994
 s4739
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/PkgInfo
-t1315450858
+t1316381994
 s8
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/ResourceRules.plist
-t1315450858
+t1316381994
 s485
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/Suplexmentary Comic NC.ttf
-t1315450858
+t1316381994
 s118452
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/TitleImagePholder_NotTransparent.png
+t2
+s0
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/animalFur.png
 t1315450858
 s6785
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/animalFur_base.png
+t2
+s0
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/animal_fur.jpg
 t1314578530
 s21469
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/arrowGraphic.png
-t1315450858
+t1316381994
 s3423
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmaWaikatoButton.png
-t1315450858
+t1316381994
 s9013
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmaWaikatoButtonPress.png
-t1315450858
+t1316381994
 s8134
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmaWaikatoLogo.png
-t1315450858
+t1316381994
 s155513
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaAnimalFur.png
-t1315450858
+t1316381994
 s53908
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaCold.png
-t1315450858
+t1316381994
 s51939
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaDustMite.png
-t1315450858
+t1316381994
 s53746
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaFluVirus.png
-t1315450858
+t1316381994
 s50287
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaPollen.png
-t1315450858
+t1316381994
 s55993
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapediaSmoke.png
-t1315450858
+t1316381994
 s49240
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/asthmapedia_placeholder.jpg
@@ -1851,23 +1864,39 @@ t1315450858
 s86991
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/backButton.png
-t1315450858
+t1316381994
 s9475
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/backButtonPress.png
-t1315450858
+t1316381994
 s8561
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/background.png
+t2
+s0
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/cold_base.png
+t2
+s0
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/deathSplat_base.png
+t2
+s0
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dustMite.png
 t1315450954
 s6815
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dustMite_base.png
+t2
+s0
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dust_mite.jpg
 t1314579167
 s23894
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/embedded.mobileprovision
-t1315450858
+t1316381994
 s9426
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fish.png
@@ -1878,147 +1907,194 @@ N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fluVirus.png
 t1315450954
 s5971
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fluVirus_base.png
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/flu_virus.jpg
 t1314579167
 s24864
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelScoreStars.png
-t1315467233
+t1316381994
 s3432
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelSelectBase.png
-t1315467233
+t1316381994
 s6170
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelSelectBaseOver.png
-t1315467233
+t1316381994
 s5280
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelSelectLockedGrey.png
-t1315467233
+t1316381994
 s6444
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/logos.png
-t1315450955
+t1316381994
 s199386
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/menuButton.png
-t1315450953
+t1316381994
 s8965
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/menuButtonPress.png
-t1315450953
+t1316381994
 s8206
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pauseButton.png
-t1315450953
+t1316381994
 s8100
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pauseButtonPress.png
-t1315450953
+t1316381994
 s7340
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pollen.png
 t1315450954
 s7185
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pollen_base.png
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/preventerBubbleGreen.png
-t1315450954
+t1316381994
 s5016
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/preventerBubbleRed.png
-t1315450954
+t1316381994
 s4696
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/sailor_Base.png
+t2
+s0
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/smoke.png
 t1315450954
 s5632
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/smoke_base.png
+t2
+s0
+
+N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/spitBubble.png
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish.xcent
-t1315450858
+t1316381994
 s615
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/AccController.o
-t1315467494
+t1316381994
 s10628
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/AnimalFur.o
-t1315536140
+t1316381994
 s40292
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/AsthmapediaViewController.o
-t1315450957
+t1316381994
 s45680
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/CreditsViewController.o
-t1315450958
+t1316381994
 s50308
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/DeathSplat.o
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/DustMite.o
-t1315465959
+t1316381994
 s39140
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/Fish.LinkFileList
-c000000004E697D0B0000000000000819
-t1315536139
-s2073
+c000000004E793EF30000000000000887
+t1316568819
+s2183
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/Fish.o
-t1315450957
+t1316381994
 s48784
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/FishAppDelegate.o
-t1315450957
+t1316381994
 s49928
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/FishViewController.o
-t1315465341
+t1316381994
 s52604
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/GameViewController.o
-t1315782006
+t1316381994
 s67048
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/LevelSelectViewController.o
-t1315465341
+t1316381994
 s41136
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/OptionsViewController.o
-t1315450958
+t1316381994
 s50812
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/Pollen.o
-t1315536414
+t1316381994
 s39104
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerArray.o
 t1315465675
 s43368
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerBubble.o
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerLining.o
 t1315450958
 s43840
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerWall.o
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/ScrollingController.o
-t1315450958
+t1316381994
 s38828
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/SpitProjectile.o
-t1315469509
+t1316381994
 s40472
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/Sprite.o
-t1315782066
+t1316381994
 s47856
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/main.o
-t1315450957
+t1316381994
 s6420
+
+N/Users/dl106/Desktop/NewFish/Fish/cold_base.png
+c000000004E71624D00000000000016C1
+t1316053581
+s5825
+
+N/Users/dl106/Desktop/NewFish/Fish/deathSplat_base.png
+c000000004E7697880000000000000D75
+t1316394888
+s3445
 
 N/Users/dl106/Desktop/NewFish/Fish/dustMite.png
 c000000004E682FEB0000000000001A2D
 t1315450859
 s6701
+
+N/Users/dl106/Desktop/NewFish/Fish/dustMite_base.png
+c000000004E71625700000000000016A2
+t1316053591
+s5794
 
 N/Users/dl106/Desktop/NewFish/Fish/dust_mite.jpg
 c000000004E5AE0630000000000005D56
@@ -2035,60 +2111,65 @@ c000000004E682FEB0000000000001814
 t1315450859
 s6164
 
+N/Users/dl106/Desktop/NewFish/Fish/fluVirus_base.png
+c000000004E7162620000000000001566
+t1316053602
+s5478
+
 N/Users/dl106/Desktop/NewFish/Fish/flu_virus.jpg
 c000000004E5AE0630000000000006120
 t1314578531
 s24864
 
 N/Users/dl106/Desktop/NewFish/Fish/levelScoreStars.png
-c000000004E686E7F0000000000000D3A
-t1315466879
+c000000004E76652B0000000000000D3A
+t1316381995
 s3386
 
 N/Users/dl106/Desktop/NewFish/Fish/levelSelectBase.png
-c000000004E686E7F000000000000148F
-t1315466879
+c000000004E76652B000000000000148F
+t1316381995
 s5263
 
 N/Users/dl106/Desktop/NewFish/Fish/levelSelectBaseOver.png
-c000000004E686E7F00000000000012CF
-t1315466879
+c000000004E76652B00000000000012CF
+t1316381995
 s4815
 
 N/Users/dl106/Desktop/NewFish/Fish/levelSelectLockedGrey.png
-c000000004E686E7F000000000000160D
-t1315466879
+c000000004E76652B000000000000160D
+t1316381995
 s5645
 
 N/Users/dl106/Desktop/NewFish/Fish/logos.png
-c000000004E682FEB000000000004116D
-t1315450859
+c000000004E76652B000000000004116D
+t1316381995
 s266605
 
 N/Users/dl106/Desktop/NewFish/Fish/main.m
-c000000004E682FEB0000000000000167
-t1315450859
+c000000004E76652B0000000000000167
+t1316381995
 s359
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/menuButton.png
-c000000004E682FEB0000000000002300
-t1315450859
+c000000004E76652B0000000000002300
+t1316381995
 s8960
 
 N/Users/dl106/Desktop/NewFish/Fish/menuButtonPress.png
-c000000004E682FEB0000000000002024
-t1315450859
+c000000004E76652B0000000000002024
+t1316381995
 s8228
 
 N/Users/dl106/Desktop/NewFish/Fish/pauseButton.png
-c000000004E682FEB0000000000001DFD
-t1315450859
+c000000004E76652B0000000000001DFD
+t1316381995
 s7677
 
 N/Users/dl106/Desktop/NewFish/Fish/pauseButtonPress.png
-c000000004E682FEB0000000000001B2C
-t1315450859
+c000000004E76652B0000000000001B2C
+t1316381995
 s6956
 
 N/Users/dl106/Desktop/NewFish/Fish/pollen.png
@@ -2096,20 +2177,40 @@ c000000004E682FEB0000000000001E34
 t1315450859
 s7732
 
+N/Users/dl106/Desktop/NewFish/Fish/pollen_base.png
+c000000004E71627400000000000018AE
+t1316053620
+s6318
+
 N/Users/dl106/Desktop/NewFish/Fish/preventerBubbleGreen.png
-c000000004E682FEB00000000000012F7
-t1315450859
+c000000004E76652B00000000000012F7
+t1316381995
 s4855
 
 N/Users/dl106/Desktop/NewFish/Fish/preventerBubbleRed.png
-c000000004E682FEB00000000000011DF
-t1315450859
+c000000004E76652B00000000000011DF
+t1316381995
 s4575
+
+N/Users/dl106/Desktop/NewFish/Fish/sailor_Base.png
+c000000004E7162A80000000000002683
+t1316053672
+s9859
 
 N/Users/dl106/Desktop/NewFish/Fish/smoke.png
 c000000004E682FEB00000000000016BE
 t1315450859
 s5822
+
+N/Users/dl106/Desktop/NewFish/Fish/smoke_base.png
+c000000004E7162840000000000001346
+t1316053636
+s4934
+
+N/Users/dl106/Desktop/NewFish/Fish/spitBubble.png
+c000000004E770B120000000000000D08
+t1316424466
+s3336
 
 N/Users/dl106/Desktop/OldFish/Fish/Classes/AccController.h
 c000000004E5C25C600000000000000E6
@@ -3729,9 +3830,9 @@ t2
 s0
 
 NFish-Info.plist
-c000000004E682FEA0000000000000484
-t1315450858
-s1156
+c000000004E7853C900000000000004B0
+t1316508617
+s1200
 
 CAnalyze /Users/dl106/Desktop/OldFish/Fish/Classes/AccController.m
 s336541306.230013
@@ -3855,7 +3956,7 @@ lSLF07#2@48"Analyze /Users/dl106/Desktop/OldFish/Fish/main.m336541305#336541305#
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies337474895#337474895#0(0"0(0#1#0"2464039568#0"0#
+lSLF07#2@18"Check dependencies338261611#338261619#0(0"0(0#1#0"2464039568#0"0#
 
 CCodeSign "/Users/dl106/Desktop/untitled folder/Fish/build/Debug-iphoneos/Fish.app"
 s336284685.400968
@@ -4315,6 +4416,9 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@73"Compile /Users/dl106/Desktop/OldFish/Fish/Classes/CreditsViewController.m336541470#336541470#0(0"0(0#0#65"/Users/dl106/Desktop/OldFish/Fish/Classes/CreditsViewController.m2464039568#1657"    cd /Users/dl106/Desktop/OldFish/Fish    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/dl106/Desktop/OldFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-generated-files.hmap -I/Users/dl106/Desktop/OldFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-own-target-headers.hmap -I/Users/dl106/Desktop/OldFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-all-target-headers.hmap -iquote /Users/dl106/Desktop/OldFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-project-headers.hmap -F/Users/dl106/Desktop/OldFish/Fish/build/Debug-iphoneos -I/Users/dl106/Desktop/OldFish/Fish/build/Debug-iphoneos/include -I/Users/dl106/Desktop/OldFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/DerivedSources/armv7 -I/Users/dl106/Desktop/OldFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/DerivedSources -include /var/folders/2X/2XWXbhY0HayA4NdwuGNXi-6scts/-Caches-/com.apple.Xcode.305701790/SharedPrecompiledHeaders/Fish_Prefix-cstldhmfuaapqtcolcubhujdhhkv/Fish_Prefix.pch -c /Users/dl106/Desktop/OldFish/Fish/Classes/CreditsViewController.m -o /Users/dl106/Desktop/OldFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/CreditsViewController.o0#
+
+CCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/DeathSplat.o /Users/dl106/Desktop/NewFish/Fish/Classes/DeathSplat.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/DustMite.o "/Users/dl106/Desktop/untitled folder/Fish/Classes/DustMite.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s336284620.608794
@@ -4945,6 +5049,9 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@66"Compile /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerArray.m337158474#337158475#0(0"0(0#0#58"/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerArray.m2464039568#1643"    cd /Users/dl106/Desktop/NewFish/Fish    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-generated-files.hmap -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-own-target-headers.hmap -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-all-target-headers.hmap -iquote /Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-project-headers.hmap -F/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos -I/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/include -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/DerivedSources/armv7 -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/DerivedSources -include /var/folders/2X/2XWXbhY0HayA4NdwuGNXi-6scts/-Caches-/com.apple.Xcode.305701790/SharedPrecompiledHeaders/Fish_Prefix-alcmdwvknougubfuueykjewgcjlt/Fish_Prefix.pch -c /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerArray.m -o /Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerArray.o0#
 
+CCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerBubble.o /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerBubble.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerLining.o /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerLining.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s337143758.723490
 e337143758.830315
@@ -4957,6 +5064,9 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerLining.m337143758#337143758#0(0"0(0#0#59"/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerLining.m2464039568#1645"    cd /Users/dl106/Desktop/NewFish/Fish    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-generated-files.hmap -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-own-target-headers.hmap -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-all-target-headers.hmap -iquote /Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Fish-project-headers.hmap -F/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos -I/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/include -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/DerivedSources/armv7 -I/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/DerivedSources -include /var/folders/2X/2XWXbhY0HayA4NdwuGNXi-6scts/-Caches-/com.apple.Xcode.305701790/SharedPrecompiledHeaders/Fish_Prefix-alcmdwvknougubfuueykjewgcjlt/Fish_Prefix.pch -c /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerLining.m -o /Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerLining.o0#
+
+CCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/PreventerWall.o /Users/dl106/Desktop/NewFish/Fish/Classes/PreventerWall.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/Fish.build/Debug-iphoneos/Fish.build/Objects-normal/armv7/ScrollingController.o /Users/dl106/Desktop/NewFish/Fish/Classes/ScrollingController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s337143758.491386
@@ -5537,7 +5647,13 @@ r0
 CCopyPNGFile /Users/dl106/Desktop/Fish/build/Debug-iphoneos/Fish.app/pauseButtonPress.png pauseButtonPress.png
 r0
 
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/TitleImagePholder_NotTransparent.png TitleImagePholder_NotTransparent.png
+r0
+
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/animalFur.png animalFur.png
+r0
+
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/animalFur_base.png animalFur_base.png
 r0
 
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/arrowGraphic.png arrowGraphic.png
@@ -5618,6 +5734,15 @@ r0
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/backButtonPress.png backButtonPress.png
 r0
 
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/background.png background.png
+r0
+
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/cold_base.png cold_base.png
+r0
+
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/deathSplat_base.png deathSplat_base.png
+r0
+
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dustMite.png dustMite.png
 s337143754.156662
 e337143754.215275
@@ -5626,6 +5751,9 @@ xCopyPNGFile
 x/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dustMite.png
 xdustMite.png
 lSLF07#2@67"CopyPNGFile build/Debug-iphoneos/Fish.app/dustMite.png dustMite.png337143754#337143754#0(0"0(0#0#46"/Users/dl106/Desktop/NewFish/Fish/dustMite.png2464039568#446"    cd /Users/dl106/Desktop/NewFish/Fish    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/dl106/Desktop/NewFish/Fish/dustMite.png /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dustMite.png0#
+
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/dustMite_base.png dustMite_base.png
+r0
 
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fish.png fish.png
 s337143752.632422
@@ -5644,6 +5772,9 @@ xCopyPNGFile
 x/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fluVirus.png
 xfluVirus.png
 lSLF07#2@67"CopyPNGFile build/Debug-iphoneos/Fish.app/fluVirus.png fluVirus.png337143754#337143754#0(0"0(0#0#46"/Users/dl106/Desktop/NewFish/Fish/fluVirus.png2464039568#446"    cd /Users/dl106/Desktop/NewFish/Fish    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/dl106/Desktop/NewFish/Fish/fluVirus.png /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fluVirus.png0#
+
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/fluVirus_base.png fluVirus_base.png
+r0
 
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/levelScoreStars.png levelScoreStars.png
 s337160032.526451
@@ -5735,6 +5866,9 @@ x/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pollen.png
 xpollen.png
 lSLF07#2@63"CopyPNGFile build/Debug-iphoneos/Fish.app/pollen.png pollen.png337143754#337143754#0(0"0(0#0#44"/Users/dl106/Desktop/NewFish/Fish/pollen.png2464039568#442"    cd /Users/dl106/Desktop/NewFish/Fish    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/dl106/Desktop/NewFish/Fish/pollen.png /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pollen.png0#
 
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/pollen_base.png pollen_base.png
+r0
+
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/preventerBubbleGreen.png preventerBubbleGreen.png
 s337143754.409871
 e337143754.461557
@@ -5753,6 +5887,9 @@ x/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/preventerBubble
 xpreventerBubbleRed.png
 lSLF07#2@87"CopyPNGFile build/Debug-iphoneos/Fish.app/preventerBubbleRed.png preventerBubbleRed.png337143754#337143754#0(0"0(0#0#56"/Users/dl106/Desktop/NewFish/Fish/preventerBubbleRed.png2464039568#466"    cd /Users/dl106/Desktop/NewFish/Fish    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/dl106/Desktop/NewFish/Fish/preventerBubbleRed.png /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/preventerBubbleRed.png0#
 
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/sailor_Base.png sailor_Base.png
+r0
+
 CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/smoke.png smoke.png
 s337143754.344316
 e337143754.409735
@@ -5761,6 +5898,12 @@ xCopyPNGFile
 x/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/smoke.png
 xsmoke.png
 lSLF07#2@61"CopyPNGFile build/Debug-iphoneos/Fish.app/smoke.png smoke.png337143754#337143754#0(0"0(0#0#43"/Users/dl106/Desktop/NewFish/Fish/smoke.png2464039568#440"    cd /Users/dl106/Desktop/NewFish/Fish    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/dl106/Desktop/NewFish/Fish/smoke.png /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/smoke.png0#
+
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/smoke_base.png smoke_base.png
+r0
+
+CCopyPNGFile /Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/Fish.app/spitBubble.png spitBubble.png
+r0
 
 CCopyPNGFile /Users/dl106/Desktop/OldFish/Fish/build/Debug-iphoneos/Fish.app/animalFur.png animalFur.png
 s336622674.269806
@@ -5897,6 +6040,9 @@ xCpResource
 xbuild/Debug-iphoneos/Fish.app/Suplexmentary Comic NC.ttf
 xSuplexmentary Comic NC.ttf
 lSLF07#2@31"Copy Suplexmentary Comic NC.ttf336281301#336281302#0(0"0(0#0#57"/Users/dl106/Desktop/Fish/Fish/Suplexmentary Comic NC.ttf2464039568#445"    cd /Users/dl106/Desktop/Fish/Fish    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/dl106/Desktop/Fish/Fish/Suplexmentary Comic NC.ttf" /Users/dl106/Desktop/Fish/Fish/build/Debug-iphoneos/Fish.app0#
+
+CCpResource build/Debug-iphoneos/Fish.app/AppleCasual.dfont AppleCasual.dfont
+r0
 
 CCpResource build/Debug-iphoneos/Fish.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
 s335684411.721299

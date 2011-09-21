@@ -15,7 +15,7 @@
 float sprite_radius = 25;
 
 
-- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray{
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish : (NSMutableArray *) passedPreventerArray : (int) myIndex : (NSMutableArray *) passedTriggerArray : (int) passedScore{
     self = [super initWithImage:[UIImage imageNamed:@"dustMite_base.png"]];
     if(self){
 		health = 2;
@@ -27,6 +27,7 @@ float sprite_radius = 25;
 		theLining = passedPreventerArray;
 		aTriggerArray = passedTriggerArray;
 		isAttacking = FALSE;
+	
         [self setFrame:CGRectMake(XPos, YPos, 72, 42)];
 		
 

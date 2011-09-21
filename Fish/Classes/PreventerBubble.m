@@ -15,7 +15,7 @@
 @synthesize YPos;
 @synthesize Health;
 
--(id)init : (int)givenXpos : (int)givenYpos;{
+-(id)init : (float)givenXpos : (float)givenYpos;{
     
     self = [super initWithImage:[UIImage imageNamed:@"preventerBubbleGreen.png"]];
 
@@ -29,12 +29,12 @@
 }
 
 -(void)removeSelf{
-	printf("Removing Self - My X was = %i, My Y was = %i, So long.\n", XPos, YPos);
+	//printf("Removing Self - My X was = %i, My Y was = %i, So long.\n", XPos, YPos);
 	[self removeFromSuperview];
 }
 
 -(void)takeDamage{
-	printf("Taking Damage - My X was = %i, My Y was = %i, Ouch.\n", XPos, YPos);
+	//printf("Taking Damage - My X was = %i, My Y was = %i, Ouch.\n", XPos, YPos);
 	Health --;
 	self.image = [UIImage imageNamed:@"preventerBubbleRed.png"];
 }

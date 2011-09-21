@@ -276,222 +276,267 @@ t1314578530
 s98
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AccController.h
-c000000004E682FEA00000000000000E6
-t1315450858
+c000000004E76652A00000000000000E6
+t1316381994
 s230
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AccController.m
-c000000004E6870E6000000000000031A
-t1315467494
+c000000004E76652A000000000000031A
+t1316381994
 s794
 i"AccController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AnimalFur.h
-c000000004E697B66000000000000011C
-t1315535718
-s284
+c000000004E793A9E00000000000001F8
+t1316567710
+s504
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/AnimalFur.m
-c000000004E697D0B0000000000000368
-t1315536139
-s872
+c000000004E793DDE0000000000000C02
+t1316568542
+s3074
 i"AnimalFur.h"
 i"SpitProjectile.h"
+i"DeathSplat.h"
+
+N/Users/dl106/Desktop/NewFish/Fish/Classes/DeathSplat.h
+c000000004E76A53E000000000000013A
+t1316398398
+s314
+i"Sprite.h"
+
+N/Users/dl106/Desktop/NewFish/Fish/Classes/DeathSplat.m
+c000000004E76A5D200000000000002FF
+t1316398546
+s767
+i"DeathSplat.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/DustMite.h
-c000000004E68348800000000000000EB
-t1315452040
-s235
+c000000004E793D660000000000000177
+t1316568422
+s375
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/DustMite.m
-c000000004E686AE6000000000000020A
-t1315465958
-s522
+c000000004E793DDE0000000000000325
+t1316568542
+s805
 i"DustMite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Fish.h
-c000000004E682FEA0000000000000156
-t1315450858
+c000000004E76652A0000000000000156
+t1316381994
 s342
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Fish.m
-c000000004E682FEA000000000000088A
-t1315450858
-s2186
+c000000004E792AE2000000000000087C
+t1316563682
+s2172
 i"Fish.h"
 i"AccController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/FishAppDelegate.h
-c000000004E682FEA00000000000001CE
-t1315450858
+c000000004E76652A00000000000001CE
+t1316381994
 s462
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/FishAppDelegate.m
-c000000004E682FEA00000000000007FD
-t1315450858
+c000000004E76652A00000000000007FD
+t1316381994
 s2045
 i"FishAppDelegate.h"
 i"FishViewController.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/FishViewController.h
-c000000004E682FEA00000000000001FD
-t1315450858
+c000000004E76652A00000000000001FD
+t1316381994
 s509
 i<UIKit/UIKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Pollen.h
-c000000004E697D0B00000000000000ED
-t1315536139
-s237
+c000000004E793A9F0000000000000179
+t1316567711
+s377
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Pollen.m
-c000000004E697E1E0000000000000206
-t1315536414
-s518
+c000000004E793DDE000000000000031F
+t1316568542
+s799
 i"Pollen.h"
 
+N/Users/dl106/Desktop/NewFish/Fish/Classes/PreventerBubble.h
+c000000004E792EA6000000000000019E
+t1316564646
+s414
+i<UIKit/UIKit.h>
+
 N/Users/dl106/Desktop/NewFish/Fish/Classes/SpitProjectile.h
-c000000004E68776F00000000000000F7
-t1315469167
-s247
+c000000004E7935DD00000000000001B2
+t1316566493
+s434
 i"Sprite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/SpitProjectile.m
-c000000004E6878C40000000000000358
-t1315469508
-s856
+c000000004E793755000000000000054E
+t1316566869
+s1358
 i"SpitProjectile.h"
+i<math.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Sprite.h
-c000000004E68698C0000000000000251
-t1315465612
-s593
+c000000004E793E80000000000000054E
+t1316568704
+s1358
 i<UIKit/UIKit.h>
+i"Fish.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/Classes/Sprite.m
-c000000004E6D3DB200000000000008FE
-t1315782066
-s2302
+c000000004E793E8000000000000018A8
+t1316568704
+s6312
 i"Sprite.h"
 i"Fish.h"
 i"Pollen.h"
+i"DustMite.h"
+i"AnimalFur.h"
+i"DeathSplat.h"
 i<stdlib.h>
 i<math.h>
+i"PreventerBubble.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/NewAnimalFurShould.h
-c000000004E682FEA00000000000000F0
-t1315450858
+c000000004E76652A00000000000000F0
+t1316381994
 s240
 i<SenTestingKit/SenTestingKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/NewAnimalFurShould.m
-c000000004E6871ED00000000000001B0
-t1315467757
+c000000004E76652A00000000000001B0
+t1316381994
 s432
 i"NewAnimalFurShould.h"
 i"AnimalFur.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/NewDustMiteShould.h
-c000000004E682FEA0000000000000112
-t1315450858
+c000000004E76652A0000000000000112
+t1316381994
 s274
 i<SenTestingKit/SenTestingKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/NewDustMiteShould.m
-c000000004E686A200000000000000252
-t1315465760
-s594
+c000000004E76652A0000000000000149
+t1316381994
+s329
 i"NewDustMiteShould.h"
 i"DustMite.h"
 
 N/Users/dl106/Desktop/NewFish/Fish/NewFishShould.h
-c000000004E682FEA00000000000000EA
-t1315450858
-s234
+c000000004E76652A0000000000000104
+t1316381994
+s260
 i<SenTestingKit/SenTestingKit.h>
 
 N/Users/dl106/Desktop/NewFish/Fish/NewFishShould.m
-c000000004E682FEA0000000000000211
-t1315450858
-s529
+c000000004E76652A0000000000000427
+t1316381994
+s1063
 i"NewFishShould.h"
 i"Fish.h"
 
+N/Users/dl106/Desktop/NewFish/Fish/NewSpriteShould.h
+c000000004E76652A0000000000000061
+t1316381994
+s97
+i<SenTestingKit/SenTestingKit.h>
+
+N/Users/dl106/Desktop/NewFish/Fish/NewSpriteShould.m
+c000000004E76652A00000000000000D3
+t1316381994
+s211
+i"NewSpriteShould.h"
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/UnitTests.octest
-t1315782067
+t1316381994
 s136
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/UnitTests.octest.dSYM
-t1315782067
+t1316381994
 s102
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/UnitTests.octest/Info.plist
-t1315450858
+t1316381994
 s632
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Debug-iphoneos/UnitTests.octest/UnitTests
-t1315782067
+t1316381994
 s41744
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/AccController.o
-t1315467498
+t1316381994
 s10628
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/AnimalFur.o
-t1315536155
+t1316381994
 s40292
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/DeathSplat.o
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/DustMite.o
-t1315465959
+t1316381994
 s39140
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/Fish.o
-t1315450858
+t1316381994
 s48848
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/FishAppDelegate.o
-t1315450858
+t1316381994
 s49912
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/NewAnimalFurShould.o
-t1315535721
+t1316381994
 s9424
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/NewDustMiteShould.o
-t1315465811
+t1316381994
 s39652
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/NewFishShould.o
-t1315450858
+t1316381994
 s45596
 
+N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/NewSpriteShould.o
+t2
+s0
+
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/Pollen.o
-t1315536414
+t1316381994
 s39104
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/SpitProjectile.o
-t1315469511
+t1316381994
 s40472
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/Sprite.o
-t1315782067
+t1316381994
 s47856
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/UnitTests.LinkFileList
-c000000004E697D1A0000000000000509
-t1315536154
+c000000004E76652A0000000000000509
+t1316381994
 s1289
 
 N/Users/dl106/Desktop/NewFish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Script-B27727D114037E76004751A1.sh
-c000000004E682FEA0000000000000062
-t1315450858
+c000000004E76652A0000000000000062
+t1316381994
 s98
 
 N/Users/dl106/Desktop/OldFish/Fish/Classes/AccController.h
@@ -853,8 +898,8 @@ t1314080549
 s98
 
 NUnitTests-Info.plist
-c000000004E682FEA000000000000027F
-t1315450858
+c000000004E76652A000000000000027F
+t1316381994
 s639
 
 CAnalyze /Users/dl106/Desktop/OldFish/Fish/Classes/AccController.m
@@ -1005,6 +1050,9 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@50"Compile /Users/dl106/Fish/Fish/Classes/AnimalFur.m336015994#336015994#0(0"0(0#0#42"/Users/dl106/Fish/Fish/Classes/AnimalFur.m2464039568#1579"    cd /Users/dl106/Fish/Fish    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/dl106/Fish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/UnitTests-generated-files.hmap -I/Users/dl106/Fish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/UnitTests-own-target-headers.hmap -I/Users/dl106/Fish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Users/dl106/Fish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/UnitTests-project-headers.hmap -F/Users/dl106/Fish/Fish/build/Debug-iphoneos -F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Developer/Library/Frameworks -I/Users/dl106/Fish/Fish/build/Debug-iphoneos/include -I/Users/dl106/Fish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/DerivedSources/armv7 -I/Users/dl106/Fish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/DerivedSources -c /Users/dl106/Fish/Fish/Classes/AnimalFur.m -o /Users/dl106/Fish/Fish/build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/AnimalFur.o0#
+
+CCompileC build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/DeathSplat.o /Users/dl106/Desktop/NewFish/Fish/Classes/DeathSplat.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/DustMite.o /Users/dl106/Desktop/Fish/Classes/DustMite.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s336363534.238981
@@ -1207,6 +1255,9 @@ CCompileC build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/N
 r0
 
 CCompileC build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/NewFishShould.o /Users/dl106/Desktop/OldFish/Fish/NewFishShould.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/NewSpriteShould.o /Users/dl106/Desktop/NewFish/Fish/NewSpriteShould.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/Fish.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/Pollen.o /Users/dl106/Desktop/NewFish/Fish/Classes/Pollen.m normal armv7 objective-c com.apple.compilers.gcc.4_2

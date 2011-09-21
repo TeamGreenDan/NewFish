@@ -65,5 +65,6 @@
 -(void) takeDamage;
 -(void) checkCollisionWithFish;
 -(void) updateArray : (int) startingPoint;
+-(int) theScore;
 
 @end

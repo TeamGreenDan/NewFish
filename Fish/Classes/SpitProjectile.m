@@ -12,10 +12,10 @@
 
 @implementation SpitProjectile
 
+@synthesize arraySpitIsIn;
 
 
-
-- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish{
+- (id)init :(int)randomX : (int)randomY : (Fish *) passedFish : (NSMutableArray *) passedArray{
     self = [super initWithImage:[UIImage imageNamed:@"spitBubble.png"]];
     if(self){
 		
@@ -24,6 +24,7 @@
 		speed = 5;
 		targetX = (int)passedFish.XPos;
 		targetY = (int)passedFish.YPos;
+		arraySpitIsIn = passedArray;
 		
         [self setFrame:CGRectMake(XPos, YPos, 25, 25)];
 		
@@ -35,13 +36,12 @@
     return self;
 }
 
--(void) moveSpit : (NSMutableArray *) passedArray{	
+-(void) moveSpit{	
 	if (XPos > (targetX -5) && XPos < (targetX +  5) && YPos > (targetY - 5) && YPos < (targetY + 5)) {
 		
-		[self removeFromSuperview];
+		[self removeSelf];
 		[aFish hit];
-		[passedArray removeObjectAtIndex:0];
-		[self release];
+				
 		
 	}
 	
@@ -54,6 +54,10 @@
 	XPos -= speed * cos(direction);
 	YPos -= speed * sin(direction);
 	[self setCenter:CGPointMake(XPos, YPos)];
+}
+
+-(void) removeSelf{
+	[self removeFromSuperview];
 }
 
 @end

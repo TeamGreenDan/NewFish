@@ -23,6 +23,12 @@
 		B20718C3140DCE2E00A9574C /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = B20718C2140DCE2E00A9574C /* logos.png */; };
 		B20718C8140DCFCE00A9574C /* asthmaWaikatoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B20718C7140DCFCE00A9574C /* asthmaWaikatoLogo.png */; };
 		B20718DA140DD22800A9574C /* ScrollingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20718D9140DD22800A9574C /* ScrollingController.m */; };
+		B211583A14296BF60098ED23 /* asthmapediaAnimalFur.png in Resources */ = {isa = PBXBuildFile; fileRef = B211583414296BF60098ED23 /* asthmapediaAnimalFur.png */; };
+		B211583B14296BF60098ED23 /* asthmapediaCold.png in Resources */ = {isa = PBXBuildFile; fileRef = B211583514296BF60098ED23 /* asthmapediaCold.png */; };
+		B211583C14296BF60098ED23 /* asthmapediaDustMite.png in Resources */ = {isa = PBXBuildFile; fileRef = B211583614296BF60098ED23 /* asthmapediaDustMite.png */; };
+		B211583D14296BF60098ED23 /* asthmapediaFluVirus.png in Resources */ = {isa = PBXBuildFile; fileRef = B211583714296BF60098ED23 /* asthmapediaFluVirus.png */; };
+		B211583E14296BF60098ED23 /* asthmapediaPollen.png in Resources */ = {isa = PBXBuildFile; fileRef = B211583814296BF60098ED23 /* asthmapediaPollen.png */; };
+		B211583F14296BF60098ED23 /* asthmapediaSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = B211583914296BF60098ED23 /* asthmapediaSmoke.png */; };
 		B2194506140C595000CC80D4 /* NewFishShould.m in Sources */ = {isa = PBXBuildFile; fileRef = B2194505140C595000CC80D4 /* NewFishShould.m */; };
 		B2194512140C598600CC80D4 /* FishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FishAppDelegate.m */; };
 		B2194520140C5AE000CC80D4 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = B29BC191140228D900A136FA /* Fish.m */; };
@@ -64,12 +70,6 @@
 		B2B4362D1426D592001BF157 /* TitleImagePholder_NotTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B4362C1426D592001BF157 /* TitleImagePholder_NotTransparent.png */; };
 		B2B4367F1426D91D001BF157 /* DeathSplat.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4367E1426D91D001BF157 /* DeathSplat.m */; };
 		B2B437621426DAD6001BF157 /* DeathSplat.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4367E1426D91D001BF157 /* DeathSplat.m */; };
-		B2B5376D140DA6AE001317FC /* asthmapediaAnimalFur.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B53767140DA6AE001317FC /* asthmapediaAnimalFur.png */; };
-		B2B5376E140DA6AF001317FC /* asthmapediaCold.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B53768140DA6AE001317FC /* asthmapediaCold.png */; };
-		B2B5376F140DA6AF001317FC /* asthmapediaDustMite.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B53769140DA6AE001317FC /* asthmapediaDustMite.png */; };
-		B2B53770140DA6AF001317FC /* asthmapediaFluVirus.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B5376A140DA6AE001317FC /* asthmapediaFluVirus.png */; };
-		B2B53771140DA6AF001317FC /* asthmapediaPollen.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B5376B140DA6AE001317FC /* asthmapediaPollen.png */; };
-		B2B53772140DA6AF001317FC /* asthmapediaSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B5376C140DA6AE001317FC /* asthmapediaSmoke.png */; };
 		B2B83A6B1428189B002D9D2F /* AppleCasual.dfont in Resources */ = {isa = PBXBuildFile; fileRef = B2B83A6A1428189B002D9D2F /* AppleCasual.dfont */; };
 		B2B9850A141ED66400054DBB /* NewSpriteShould.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B98509141ED66400054DBB /* NewSpriteShould.m */; };
 		B2C8673C140B19E100E2EA14 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8673A140B19E100E2EA14 /* OptionsViewController.m */; };
@@ -121,6 +121,12 @@
 		B20718C7140DCFCE00A9574C /* asthmaWaikatoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmaWaikatoLogo.png; sourceTree = "<group>"; };
 		B20718D8140DD22800A9574C /* ScrollingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingController.h; sourceTree = "<group>"; };
 		B20718D9140DD22800A9574C /* ScrollingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingController.m; sourceTree = "<group>"; };
+		B211583414296BF60098ED23 /* asthmapediaAnimalFur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaAnimalFur.png; sourceTree = "<group>"; };
+		B211583514296BF60098ED23 /* asthmapediaCold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaCold.png; sourceTree = "<group>"; };
+		B211583614296BF60098ED23 /* asthmapediaDustMite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaDustMite.png; sourceTree = "<group>"; };
+		B211583714296BF60098ED23 /* asthmapediaFluVirus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaFluVirus.png; sourceTree = "<group>"; };
+		B211583814296BF60098ED23 /* asthmapediaPollen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaPollen.png; sourceTree = "<group>"; };
+		B211583914296BF60098ED23 /* asthmapediaSmoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaSmoke.png; sourceTree = "<group>"; };
 		B2194504140C595000CC80D4 /* NewFishShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFishShould.h; sourceTree = "<group>"; };
 		B2194505140C595000CC80D4 /* NewFishShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFishShould.m; sourceTree = "<group>"; };
 		B219455A140C5DD000CC80D4 /* NewDustMiteShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDustMiteShould.h; sourceTree = "<group>"; };
@@ -168,12 +174,6 @@
 		B2B4362C1426D592001BF157 /* TitleImagePholder_NotTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleImagePholder_NotTransparent.png; sourceTree = "<group>"; };
 		B2B4367D1426D91D001BF157 /* DeathSplat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathSplat.h; sourceTree = "<group>"; };
 		B2B4367E1426D91D001BF157 /* DeathSplat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathSplat.m; sourceTree = "<group>"; };
-		B2B53767140DA6AE001317FC /* asthmapediaAnimalFur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaAnimalFur.png; sourceTree = "<group>"; };
-		B2B53768140DA6AE001317FC /* asthmapediaCold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaCold.png; sourceTree = "<group>"; };
-		B2B53769140DA6AE001317FC /* asthmapediaDustMite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaDustMite.png; sourceTree = "<group>"; };
-		B2B5376A140DA6AE001317FC /* asthmapediaFluVirus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaFluVirus.png; sourceTree = "<group>"; };
-		B2B5376B140DA6AE001317FC /* asthmapediaPollen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaPollen.png; sourceTree = "<group>"; };
-		B2B5376C140DA6AE001317FC /* asthmapediaSmoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asthmapediaSmoke.png; sourceTree = "<group>"; };
 		B2B83A6A1428189B002D9D2F /* AppleCasual.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleCasual.dfont; sourceTree = "<group>"; };
 		B2B98508141ED66400054DBB /* NewSpriteShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSpriteShould.h; sourceTree = "<group>"; };
 		B2B98509141ED66400054DBB /* NewSpriteShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSpriteShould.m; sourceTree = "<group>"; };
@@ -319,12 +319,12 @@
 		B2194640140C866900CC80D4 /* Asthmapedia Items */ = {
 			isa = PBXGroup;
 			children = (
-				B2B53767140DA6AE001317FC /* asthmapediaAnimalFur.png */,
-				B2B53768140DA6AE001317FC /* asthmapediaCold.png */,
-				B2B53769140DA6AE001317FC /* asthmapediaDustMite.png */,
-				B2B5376A140DA6AE001317FC /* asthmapediaFluVirus.png */,
-				B2B5376B140DA6AE001317FC /* asthmapediaPollen.png */,
-				B2B5376C140DA6AE001317FC /* asthmapediaSmoke.png */,
+				B211583414296BF60098ED23 /* asthmapediaAnimalFur.png */,
+				B211583514296BF60098ED23 /* asthmapediaCold.png */,
+				B211583614296BF60098ED23 /* asthmapediaDustMite.png */,
+				B211583714296BF60098ED23 /* asthmapediaFluVirus.png */,
+				B211583814296BF60098ED23 /* asthmapediaPollen.png */,
+				B211583914296BF60098ED23 /* asthmapediaSmoke.png */,
 			);
 			name = "Asthmapedia Items";
 			sourceTree = "<group>";
@@ -518,12 +518,6 @@
 				B2214E6F140B516400762FD6 /* backButton.png in Resources */,
 				B2214E70140B516400762FD6 /* menuButton.png in Resources */,
 				B2214E71140B516400762FD6 /* pauseButton.png in Resources */,
-				B2B5376D140DA6AE001317FC /* asthmapediaAnimalFur.png in Resources */,
-				B2B5376E140DA6AF001317FC /* asthmapediaCold.png in Resources */,
-				B2B5376F140DA6AF001317FC /* asthmapediaDustMite.png in Resources */,
-				B2B53770140DA6AF001317FC /* asthmapediaFluVirus.png in Resources */,
-				B2B53771140DA6AF001317FC /* asthmapediaPollen.png in Resources */,
-				B2B53772140DA6AF001317FC /* asthmapediaSmoke.png in Resources */,
 				B20718C3140DCE2E00A9574C /* logos.png in Resources */,
 				B20718C8140DCFCE00A9574C /* asthmaWaikatoLogo.png in Resources */,
 				B2E053E414159D7E00EABDA0 /* preventerBubbleGreen.png in Resources */,
@@ -544,6 +538,12 @@
 				B2B4362D1426D592001BF157 /* TitleImagePholder_NotTransparent.png in Resources */,
 				B234BA29142747AF00EB3934 /* spitBubble.png in Resources */,
 				B2B83A6B1428189B002D9D2F /* AppleCasual.dfont in Resources */,
+				B211583A14296BF60098ED23 /* asthmapediaAnimalFur.png in Resources */,
+				B211583B14296BF60098ED23 /* asthmapediaCold.png in Resources */,
+				B211583C14296BF60098ED23 /* asthmapediaDustMite.png in Resources */,
+				B211583D14296BF60098ED23 /* asthmapediaFluVirus.png in Resources */,
+				B211583E14296BF60098ED23 /* asthmapediaPollen.png in Resources */,
+				B211583F14296BF60098ED23 /* asthmapediaSmoke.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,16 +10,16 @@
 
 
 @interface PreventerBubble : UIImageView {
-	int XPos;
-	int YPos;
+	float XPos;
+	float YPos;
 	int Health;
 }
 
-@property int XPos;
-@property int YPos;
+@property float XPos;
+@property float YPos;
 @property int Health;
 
--(id)init : (int)givenXpos : (int)givenYpos;
+-(id)init : (float)givenXpos : (float)givenYpos;
 -(void) removeSelf;
 -(void) takeDamage;
 
