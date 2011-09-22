@@ -4,7 +4,7 @@
 <dict>
  <key>files</key>
  <array>
-  <string>/Users/dl106/Desktop/OldFish/Fish/Classes/AsthmapediaViewController.m</string>
+  <string>/Users/dl106/Desktop/NewFish/Fish/Classes/AsthmapediaViewController.m</string>
  </array>
  <key>diagnostics</key>
  <array>
@@ -32,12 +32,12 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>74</integer>
+           <key>line</key><integer>75</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>74</integer>
+           <key>line</key><integer>75</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -53,12 +53,12 @@
         <key>start</key>
          <array>
           <dict>
-           <key>line</key><integer>74</integer>
+           <key>line</key><integer>75</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>74</integer>
+           <key>line</key><integer>75</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -66,12 +66,12 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>75</integer>
+           <key>line</key><integer>76</integer>
            <key>col</key><integer>3</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>75</integer>
+           <key>line</key><integer>76</integer>
            <key>col</key><integer>3</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -87,12 +87,12 @@
         <key>start</key>
          <array>
           <dict>
-           <key>line</key><integer>75</integer>
+           <key>line</key><integer>76</integer>
            <key>col</key><integer>3</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>75</integer>
+           <key>line</key><integer>76</integer>
            <key>col</key><integer>3</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -100,12 +100,12 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>82</integer>
+           <key>line</key><integer>83</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>82</integer>
+           <key>line</key><integer>83</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -121,12 +121,12 @@
         <key>start</key>
          <array>
           <dict>
-           <key>line</key><integer>82</integer>
+           <key>line</key><integer>83</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>82</integer>
+           <key>line</key><integer>83</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -134,12 +134,12 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -155,12 +155,12 @@
         <key>start</key>
          <array>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -168,12 +168,12 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>27</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>69</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -185,7 +185,7 @@
      <key>kind</key><string>event</string>
      <key>location</key>
      <dict>
-      <key>line</key><integer>86</integer>
+      <key>line</key><integer>87</integer>
       <key>col</key><integer>27</integer>
       <key>file</key><integer>0</integer>
      </dict>
@@ -193,12 +193,12 @@
      <array>
        <array>
         <dict>
-         <key>line</key><integer>86</integer>
+         <key>line</key><integer>87</integer>
          <key>col</key><integer>27</integer>
          <key>file</key><integer>0</integer>
         </dict>
         <dict>
-         <key>line</key><integer>86</integer>
+         <key>line</key><integer>87</integer>
          <key>col</key><integer>69</integer>
          <key>file</key><integer>0</integer>
         </dict>
@@ -217,12 +217,12 @@
         <key>start</key>
          <array>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>27</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>86</integer>
+           <key>line</key><integer>87</integer>
            <key>col</key><integer>69</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -230,12 +230,12 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>93</integer>
+           <key>line</key><integer>94</integer>
            <key>col</key><integer>1</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>93</integer>
+           <key>line</key><integer>94</integer>
            <key>col</key><integer>1</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -247,7 +247,7 @@
      <key>kind</key><string>event</string>
      <key>location</key>
      <dict>
-      <key>line</key><integer>93</integer>
+      <key>line</key><integer>94</integer>
       <key>col</key><integer>1</integer>
       <key>file</key><integer>0</integer>
      </dict>
@@ -255,29 +255,29 @@
      <array>
        <array>
         <dict>
-         <key>line</key><integer>93</integer>
+         <key>line</key><integer>94</integer>
          <key>col</key><integer>1</integer>
          <key>file</key><integer>0</integer>
         </dict>
         <dict>
-         <key>line</key><integer>93</integer>
+         <key>line</key><integer>94</integer>
          <key>col</key><integer>1</integer>
          <key>file</key><integer>0</integer>
         </dict>
        </array>
      </array>
      <key>extended_message</key>
-     <string>Object allocated on line 86 and stored into &apos;imageView&apos; is not referenced later in this execution path and has a retain count of +1 (object leaked)</string>
+     <string>Object allocated on line 87 and stored into &apos;imageView&apos; is not referenced later in this execution path and has a retain count of +1 (object leaked)</string>
      <key>message</key>
-<string>Object allocated on line 86 and stored into &apos;imageView&apos; is not referenced later in this execution path and has a retain count of +1 (object leaked)</string>
+<string>Object allocated on line 87 and stored into &apos;imageView&apos; is not referenced later in this execution path and has a retain count of +1 (object leaked)</string>
     </dict>
    </array>
-   <key>description</key><string>Potential leak of an object allocated on line 86 and stored into &apos;imageView&apos;</string>
+   <key>description</key><string>Potential leak of an object allocated on line 87 and stored into &apos;imageView&apos;</string>
    <key>category</key><string>Memory (Core Foundation/Objective-C)</string>
    <key>type</key><string>Leak of returned object</string>
   <key>location</key>
   <dict>
-   <key>line</key><integer>93</integer>
+   <key>line</key><integer>94</integer>
    <key>col</key><integer>1</integer>
    <key>file</key><integer>0</integer>
   </dict>
