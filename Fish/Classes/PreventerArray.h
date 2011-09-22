@@ -16,6 +16,7 @@
 	NSMutableArray *rows;
 }
 
+-(id)initWithViewController:(UIViewController *) ViewUI;
 -(void)createArray:(float)xStart :(float)yStart;
 -(void)checkCollisionWithTrigger :(Sprite *) aSprite;
 //-(void)checkHealthOfLinings;

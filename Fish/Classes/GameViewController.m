@@ -165,6 +165,7 @@ int score = 0;
 				[triggersArray insertObject:theMite atIndex:i];
 				spawnSwitch1 = FALSE;
 			}
+<<<<<<< HEAD
 	/*
 		DustMite *theMite = [[DustMite alloc] init:(300):200 : theFish : preventerArray : 0 : triggersArray];			
 		[self.view addSubview:theMite];
@@ -187,6 +188,16 @@ int score = 0;
 			
 		}
 		
+=======
+			
+			
+		}
+		
+		
+		//instantiate the lining
+		theLining = [[PreventerArray alloc] initWithViewController: self];
+		[theLining createArray:25 :75];		
+>>>>>>> da7a249915a92b5924307f6617f108b4267a37ac
 		
     }
     return self;
